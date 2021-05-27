@@ -608,7 +608,7 @@ table figure {
 	height: 35px;
 	font-size: 0;
 	overflow: hidden;
-	background: url(../assets/svg/anonymous.svg) center/cover no-repeat;
+	background: url(anonymous.svg) center/cover no-repeat;
 }
 
 .article-comments .comment-header .user {
