@@ -694,6 +694,10 @@ table figure {
 	padding: 0;
 }
 
+.comment-content {
+	word-break: break-word;
+}
+
 #thumbup {
 	position: relative;
 	margin: 2rem 0;
