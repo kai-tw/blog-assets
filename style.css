@@ -406,6 +406,11 @@ table figure {
 	overflow: hidden;
 }
 
+.site-article {
+	text-align: justify;
+	letter-spacing: .1em;
+}
+
 #site-pagination {
 	display: flex;
 	flex-direction: row;
