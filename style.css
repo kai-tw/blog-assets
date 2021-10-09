@@ -512,6 +512,7 @@ table figure {
 .site-article blockquote {
 	padding: 0 2rem;
 	border-left: .2rem solid;
+	word-break: break-all;
 }
 
 .site-article hr {
