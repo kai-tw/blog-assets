@@ -853,6 +853,7 @@ table figure {
 	transition: all .5s ease;
 	box-sizing: border-box;
 	z-index: 1;
+	font-size: .9em;
 }
 
 #site-aside .widget {
