@@ -51,7 +51,7 @@ html {
 
 body {
 	position: relative;
-	margin: 0 0 0 30rem;
+	margin: 0 20rem 0 10rem;
 	color: var(--global-text-color);
 	background: var(--global-background);
 	overflow-x: hidden;
@@ -279,7 +279,7 @@ table figure {
 		display: block;
 		position: fixed;
 		top: 1rem;
-		left: 8.5rem;
+		right: 1rem;
 		border-width: 3px;
 		border-style: solid;
 		border-color: var(--global-border-color);
@@ -363,7 +363,7 @@ table figure {
 
 	#site-aside-toggle {
 		top: 4rem;
-		left: 0;
+		right: 0;
 		margin: .5rem;
 	}
 
@@ -375,11 +375,7 @@ table figure {
 
 #site-main {
 	display: block;
-	margin: 0 2.5rem;
 	padding: 5rem 2.5rem;
-	border-width: 0 1px 0;
-    border-style: solid;
-    border-color: var(--global-border-color);
 	box-sizing: border-box;
 }
 
@@ -845,10 +841,10 @@ table figure {
 #site-aside {
 	position: fixed;
 	top: 0;
-	left: 10rem;
+	right: 1px;
 	bottom: 0;
 	padding: 5rem 1rem;
-	border-width: 0 1px 0 0;
+	border-width: 0 0 0 1px;
 	border-style: solid;
 	border-color: var(--global-border-color);
 	width: 20rem;
@@ -883,7 +879,7 @@ table figure {
 
 @media screen and (max-width: 1280px) {
 	#site-aside {
-		transform: translateX(-100%);
+		transform: translateX(100%);
 		opacity: 0;
 		background: var(--global-background);
 	}
@@ -892,7 +888,7 @@ table figure {
 @media screen and (max-width: 768px) {
 	#site-aside {
 		top: 4rem;
-		left: 0;
+		right: 0;
 		padding-top: 4rem;
 		width: auto;
 		max-width: 20rem;
