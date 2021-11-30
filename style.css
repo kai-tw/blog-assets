@@ -94,6 +94,7 @@ a {
 	color: var(--global-link-color);
 	text-decoration: none;
 	transition: opacity .2s ease-in-out;
+	word-break: break-all
 }
 
 a:hover {
