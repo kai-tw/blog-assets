@@ -457,7 +457,7 @@ table figure {
 }
 
 .site-article h1,.site-article h2,.site-article h3,.site-article h4,.site-article h5,.site-article h6,.site-article p,.site-article ul,.site-article ol,.site-article blockquote,.site-article table,.site-article pre,.site-article code,.site-article picture,.site-article hr {
-	margin: 2rem 0;
+	margin: 1em 0;
 }
 
 .site-article picture br {
@@ -466,6 +466,9 @@ table figure {
 
 .site-article h1,.site-article h2 {
 	font-size: 1.5rem;
+}
+.site-article h1, .site-article h2, .site-article h3, .site-article h4, .site-article h5, .site-article h6 {
+	margin: 3em 0 1em;
 }
 
 .site-article picture {
