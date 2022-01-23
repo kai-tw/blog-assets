@@ -19,7 +19,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--global-text-color: #eee;
-		--global-link-color: #27dcf3;
+		--global-link-color: #ff7171;
 		--global-border-color: #414141;
 		--global-background: #111;
 		--global-background-translucent: rgba(17,17,17,.9);
