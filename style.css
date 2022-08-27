@@ -1191,3 +1191,8 @@ table figure {
 #related-article .post a:after {
 	display: none;
 }
+
+/* Addthis */
+.at-share-btn {
+	border: none
+}
