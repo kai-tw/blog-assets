@@ -62,12 +62,6 @@ body > .google-auto-placed, #site-pagination .google-auto-placed, .singleton-ele
 	display: none!important;
 }
 
-@media screen and (min-width: 1200px) {
-	html {
-		font-size: 18px;
-	}
-}
-
 @media screen and (max-width: 1280px) {
 	body {
 		margin: 0 0 0 10rem;
@@ -456,7 +450,7 @@ table figure {
 	background: #333;
 }
 
-.site-article h1,.site-article h2,.site-article h3,.site-article h4,.site-article h5,.site-article h6,.site-article p,.site-article ul,.site-article ol,.site-article blockquote,.site-article table,.site-article pre,.site-article code,.site-article picture,.site-article hr {
+.site-article p,.site-article ul,.site-article ol,.site-article blockquote,.site-article table,.site-article pre,.site-article code,.site-article picture,.site-article hr {
 	margin: 1em 0;
 }
 
@@ -468,7 +462,7 @@ table figure {
 	font-size: 1.5rem;
 }
 .site-article h1, .site-article h2, .site-article h3, .site-article h4, .site-article h5, .site-article h6 {
-	margin: 3em 0 1em;
+	margin: 1.5em 0 .5em;
 }
 
 .site-article picture {
