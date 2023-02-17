@@ -982,7 +982,7 @@ table figure {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	height: 60px;
+	height: 4rem;
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
@@ -1026,6 +1026,25 @@ table figure {
 .share-toggle-btn:hover, .share-box.expand .share-toggle-btn {
 	clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
 	-webkit-clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
+}
+@media screen and (max-width: 20rem) {
+	.share-box, .share-board {
+		flex-direction: column;
+	}
+	.share-box {
+		width: 4rem;
+		height: unset;
+	}
+	.share-board {
+		width: 4rem;
+		height: 0;
+		clip-path: polygon(0% 3%, 100% 0%, 90% 95%, 90% 95%, 5% 100%, 5% 100%, 0% 3%);
+		-webkit-clip-path: polygon(0% 3%, 100% 0%, 90% 95%, 90% 95%, 5% 100%, 5% 100%, 0% 3%);
+	}
+	.share-box.expand .share-board {
+		width: 4rem;
+		height: 16rem;
+	}
 }
 
 .video {
