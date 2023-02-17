@@ -979,53 +979,53 @@ table figure {
 }
 
 .share-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 60px;
-  position: fixed;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%, 50%);
-  transition: all .2s ease;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 60px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: all .2s ease;
+	z-index: 2;
 }
 .share-box svg {
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
 }
 .share-board {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 0;
-  overflow: hidden;
-  transition: inherit;
-  background: #d5f6e9;
-  clip-path: polygon(5% 0%, 100% 15%, 95% 90%, 95% 90%, 0% 100%, 0% 100%, 5% 0%);
-  -webkit-clip-path: polygon(5% 0%, 100% 15%, 95% 90%, 95% 90%, 0% 100%, 0% 100%, 5% 0%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 0;
+	overflow: hidden;
+	transition: inherit;
+	background: #d5f6e9;
+	clip-path: polygon(5% 0%, 100% 15%, 95% 90%, 95% 90%, 0% 100%, 0% 100%, 5% 0%);
+	-webkit-clip-path: polygon(5% 0%, 100% 15%, 95% 90%, 95% 90%, 0% 100%, 0% 100%, 5% 0%);
 }
 .share-box.expand .share-board {
-  width: 16rem;
+	width: 16rem;
 }
 .share-btn {
-  display: block;
-  padding: 1rem;
-  border: none;
-  width: 4rem;
-  height: 4rem;
-  transition: inherit;
-  box-sizing: border-box;
+	display: block;
+	padding: 1rem;
+	border: none;
+	width: 4rem;
+	height: 4rem;
+	transition: inherit;
+	box-sizing: border-box;
 }
 .share-toggle-btn {
-  background: #62c5ae;
-  cursor: pointer;
-  clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
-  -webkit-clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
+	background: #62c5ae;
+	cursor: pointer;
+	clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
+	-webkit-clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
 }
 .share-toggle-btn:hover, .share-box.expand .share-toggle-btn {
-  clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
-  -webkit-clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
+	clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
+	-webkit-clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
 }
 
 .video {
