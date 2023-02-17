@@ -151,6 +151,13 @@ ra.input = function (e) {
 	}
 }
 
+/* Share box */
+if (document.getElementById("share-btn-hitbox")) {
+	document.getElementById("share-btn-hitbox").addEventListener("click", function() {
+		this.parentNode.classList.toggle("expand");
+	});
+}
+
 function scrollToAnchor(name) {
 	document.getElementById(name).scrollIntoView()
 }
