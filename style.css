@@ -978,27 +978,56 @@ table figure {
 	margin: 0 0 0 2rem;
 }
 
-.site-share {
-	margin: 2rem 0;
+.share-box {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	font-size: 1.3rem;
+	flex-wrap: nowrap;
+	height: 60px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	transition: all .2s ease;
 }
-
-.site-share .site-button {
-	flex: 1;
+.share-box svg {
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+}
+.share-board {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 0;
+	overflow: hidden;
+	transition: inherit;
+}
+.share-box.expand .share-board {
+	width: 16rem;
+}
+.share-btn {
+	display: block;
+	padding: 1rem;
 	border: none;
-	height: 3rem;
+	width: 4rem;
+	height: 4rem;
+	transition: inherit;
+	box-sizing: border-box;
 }
-
-.site-share .site-button:after {
-	display: none;
+.share-toggle-btn {
+	background: #62c5ae;
+	cursor: pointer;
+	clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
+	-webkit-clip-path: polygon(50% 0%, 90.18% 19.72%,100% 64.22%,72.32% 100%,27.68% 100%,0% 64.22%,10.09% 19.72%);
 }
-
-.site-share .site-button:hover {
-	color: #5f9ea0;
+.share-toggle-btn:hover, .share-box.expand .share-toggle-btn {
+	clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
+	-webkit-clip-path: polygon(20% 0%, 100% 20%, 80% 90%, 80% 90%, 0% 100%, 0% 100%, 20% 0%);
+}
+@media (prefers-color-scheme: dark) {
+	.share-toggle-btn {
+		background: #5f9ea0;
+		color: #ddd;
+	}
 }
 
 .video {
@@ -1026,38 +1055,6 @@ table figure {
 	border: none;
 	width: 100%;
 	height: 100%;
-}
-
-.cloud {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.cloud .item {
-	display: flex;
-	align-items: center;
-	margin: .5rem;
-	padding: .6rem;
-	border-radius: 1rem;
-	background: rgba(0,0,0,.1);
-}
-
-.cloud .item .icon,.cloud .item .label {
-	display: block;
-}
-
-.cloud .item .icon {
-	width: 2rem;
-	height: 2rem;
-	margin: 0 .5rem 0 0;
-}
-
-.cloud .item .label {
-	word-break: keep-all;
-}
-
-.cloud .theme-green {
-	background: rgba(0,107,13,.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1184,9 +1181,4 @@ table figure {
 
 #related-article .post a:after {
 	display: none;
-}
-
-/* Addthis */
-.at-share-btn {
-	border: none
 }
