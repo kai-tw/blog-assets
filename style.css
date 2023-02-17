@@ -987,6 +987,7 @@ table figure {
 	right: 10px;
 	bottom: 10px;
 	transition: all .2s ease;
+	z-index: 2;
 }
 .share-box svg {
 	width: 100%;
