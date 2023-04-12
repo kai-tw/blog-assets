@@ -904,7 +904,7 @@ table figure {
 }
 
 .site-category > li {
-	margin: .1rem 0;
+	margin: .1rem;
 	padding: 0 .5rem;
 	border-radius: .5rem;
 	background: rgba(118, 118, 118, 11%);
