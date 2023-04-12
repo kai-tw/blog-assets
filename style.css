@@ -894,6 +894,30 @@ table figure {
 	}
 }
 
+.site-category {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+	transition: all .2s ease;
+}
+
+.site-category > li {
+	margin: .1rem 0;
+	padding: 0 .5rem;
+	border-radius: .5rem;
+	background: rgba(118, 118, 118, 11%);
+	transition: inherit;
+}
+.site-category:hover > li {
+	opacity: .9;
+}
+.site-category > li:hover {
+	background: transparent;
+	opacity: 1;
+}
+
 #site-footer {
 	padding: 1.5rem;
 	border-width: 1px 0 0;
