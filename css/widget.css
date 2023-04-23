@@ -28,5 +28,7 @@
   color: inherit;
 }
 .widget .FeaturedPost a {
+  border: none;
   color: inherit;
+  text-decoration: none;
 }
