@@ -809,10 +809,10 @@ img {
   margin: 1rem;
 }
 
-.widget .popular-post {
+.popular-post {
   position: relative;
 }
-.widget .popular-post:before {
+.popular-post:before {
   content: attr(data-index);
   position: absolute;
   right: 0.2em;
@@ -823,27 +823,28 @@ img {
   opacity: 0.1;
   z-index: -1;
 }
-.widget .popular-post:not(:nth-of-type(1)) {
+.popular-post:not(:nth-of-type(1)) {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 2px dotted rgba(0, 0, 0, 0.1);
 }
-.widget .popular-post h4 {
+.popular-post h4 {
   margin: 0;
 }
-.widget .popular-post p {
+.popular-post p {
   margin: 0;
   opacity: 0.8;
 }
-.widget .popular-post a {
+.popular-post a {
   color: #0000ff;
 }
-.widget .FeaturedPost a {
+
+.FeaturedPost a {
   border: none;
   color: inherit;
   text-decoration: none;
 }
-.widget .FeaturedPost a:hover {
+.FeaturedPost a:hover {
   color: #0000ff;
 }
 
