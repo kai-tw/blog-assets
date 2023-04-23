@@ -44,7 +44,7 @@ $transition_def: all .2s ease;
 		margin: .5rem 0;
 		padding: .5rem 0;
 		&:not(:last-child) {
-			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
 		}
 		a {
 			display: block;

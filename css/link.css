@@ -43,7 +43,7 @@
   padding: 0.5rem 0;
 }
 .link-list .item:not(:last-child) {
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .link-list .item a {
   display: block;
