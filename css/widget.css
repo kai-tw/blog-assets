@@ -25,10 +25,13 @@
   opacity: 0.8;
 }
 .widget .popular-post a {
-  color: inherit;
+  color: #0000ff;
 }
 .widget .FeaturedPost a {
   border: none;
   color: inherit;
   text-decoration: none;
+}
+.widget .FeaturedPost a:hover {
+  color: #0000ff;
 }

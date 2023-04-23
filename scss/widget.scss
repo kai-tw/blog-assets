@@ -27,7 +27,7 @@
             opacity: .8;
         }
         a {
-            color: inherit;
+            color: #0000ff;
         }
     }
     .FeaturedPost {
@@ -35,6 +35,10 @@
             border: none;
             color: inherit;
             text-decoration: none;
+
+            &:hover {
+                color: #0000ff;
+            }
         }
     }
 }
