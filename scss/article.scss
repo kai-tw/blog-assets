@@ -12,6 +12,24 @@
             margin: 1rem 0;
             font-size: 2rem;
         }
+        .article-info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .item {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                .icon {
+                    display: block;
+                    margin-right: 1em;
+                }
+                .content {
+                    display: block;
+                }
+            }
+        }
     }
 
     h1, h2 {
