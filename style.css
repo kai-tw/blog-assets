@@ -850,6 +850,10 @@ table figure {
 	width: 100%;
 }
 
+#site-aside a {
+	color: inherit;
+}
+
 @media screen and (max-width: 1280px) {
 	#site-aside {
 		transform: translateX(100%);
