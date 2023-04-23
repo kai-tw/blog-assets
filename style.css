@@ -166,11 +166,6 @@ table figure {
 #site-nav ul a {
 	display: block;
 	padding: .2rem 1rem .2rem .7rem;
-	border-left: .3rem solid transparent;
-}
-
-#site-nav ul a:hover {
-	border-color: #5f9ea0;
 }
 
 .site-button {
@@ -855,9 +850,9 @@ table figure {
 }
 
 #site-aside .widget {
-	margin-bottom: 3rem;
-	padding-bottom: 3rem;
-	border-bottom: 2px dashed;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #aaa;
 }
 
 #site-aside img {
@@ -870,10 +865,6 @@ table figure {
 	color: inherit;
 	text-decoration: none;
 	transition: all .2s linear;
-}
-
-#site-aside a:hover {
-	color: #5f9ea0;
 }
 
 @media screen and (max-width: 1280px) {
@@ -992,10 +983,12 @@ table figure {
 	color: inherit;
 	text-decoration: none;
 	transition: all .2s linear;
+	border-left: .3rem solid transparent;
 }
 
 .link-list a:hover {
 	opacity: 1;
+	border-color: #5f9ea0;
 }
 
 .link-list ul {
