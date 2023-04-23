@@ -408,6 +408,9 @@ img {
 .site-article figure figcaption a {
   color: inherit;
 }
+.site-article .snippet {
+  display: none;
+}
 .site-article p,
 .site-article pre {
   margin: 1em 0;
@@ -777,9 +780,6 @@ img {
 #site-aside img {
   width: 100%;
 }
-#site-aside a {
-  color: inherit;
-}
 
 #site-footer {
   padding: 1.5rem;
@@ -834,6 +834,12 @@ img {
 .widget .popular-post p {
   margin: 0;
   opacity: 0.8;
+}
+.widget .popular-post a {
+  color: inherit;
+}
+.widget .FeaturedPost a {
+  color: inherit;
 }
 
 .share-box {

@@ -64,6 +64,9 @@
 .site-article figure figcaption a {
   color: inherit;
 }
+.site-article .snippet {
+  display: none;
+}
 .site-article p,
 .site-article pre {
   margin: 1em 0;

@@ -38,7 +38,6 @@
             }
         }
     }
-
     h1, h2 {
         margin: 1.5em 0 .5em;
         font-size: 1.5rem;
@@ -69,6 +68,9 @@
                 color: inherit;
             }
         }
+    }
+    .snippet {
+        display: none;
     }
     p,
     pre {
