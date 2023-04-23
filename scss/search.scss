@@ -69,6 +69,8 @@
     position: relative;
     margin-bottom: 4rem;
     line-height: 5rem;
+    font-size: 1.8em;
+    font-weight: lighter;
     cursor: default;
     &:before {
         content: attr(data-label);
@@ -79,7 +81,7 @@
         transform: translate(1rem, -50%);
         color: rgb(123 123 123 / 8%);
         font-size: 5rem;
-        font-weight: 700;
+        font-weight: inherit;
         text-transform: uppercase;
         white-space: pre;
         z-index: -1;
