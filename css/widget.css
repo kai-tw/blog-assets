@@ -27,6 +27,9 @@
 .popular-post a:hover {
   color: #0000ff;
 }
+.popular-post .thumbnail {
+  display: block;
+}
 
 .FeaturedPost a {
   border: none;
