@@ -3,7 +3,7 @@ if (document.getElementsByClassName("twitter-tweet").length > 0)
 
 document.getElementById("site-header").addEventListener("click", function (e) {
 	switch (e.target.id) {
-		case "site-search-open":
+		case "site-search-btn":
 			document.getElementById("site-search").classList.add("open");
 			break;
 		case "site-search-close":
@@ -15,7 +15,7 @@ document.getElementById("site-header").addEventListener("click", function (e) {
 		case "site-nav-close":
 			document.getElementById("site-nav").classList.remove("open");
 			break;
-		case "site-aside-btn":
+		case "site-aside-toggle":
 			document.body.classList.toggle("site-aside-expanded");
 			break;
 	}
