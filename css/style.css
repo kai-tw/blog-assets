@@ -350,7 +350,7 @@ img {
   color: #333;
 }
 .site-article .article-header a {
-  color: var(--global-text-color);
+  color: inherit;
   font-weight: bolder;
 }
 .site-article .article-header h1 {
