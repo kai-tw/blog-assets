@@ -11,17 +11,25 @@ $transition_def: all .2s ease;
 	.item {
 		display: block;
 		margin: .3125em;
+		transition: inherit;
 		a {
 			display: block;
-			padding: .3125em .5em;
-			border: none;
-			border-radius: .5em;
+			padding: .3em .8em;
+			border: 3px solid transparent;
+			border-radius: 1em;
 			background: rgb(157 157 157 / 11%);
 			text-decoration: none;
+			transition: inherit;
+			&:hover {
+				border-color: #1e5354;
+				background: transparent;
+				color: #1e5354;
+			}
 		}
 	}
 }
 .link-list {
+	display: block;
 	margin: 0;
 	padding: 0;
 	list-style: none;

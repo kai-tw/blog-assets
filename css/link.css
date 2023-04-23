@@ -10,17 +10,25 @@
 .link-cloud .item {
   display: block;
   margin: 0.3125em;
+  transition: inherit;
 }
 .link-cloud .item a {
   display: block;
-  padding: 0.3125em 0.5em;
-  border: none;
-  border-radius: 0.5em;
+  padding: 0.3em 0.8em;
+  border: 3px solid transparent;
+  border-radius: 1em;
   background: rgba(157, 157, 157, 0.11);
   text-decoration: none;
+  transition: inherit;
+}
+.link-cloud .item a:hover {
+  border-color: #1e5354;
+  background: transparent;
+  color: #1e5354;
 }
 
 .link-list {
+  display: block;
   margin: 0;
   padding: 0;
   list-style: none;
