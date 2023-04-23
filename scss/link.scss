@@ -19,6 +19,7 @@ $transition_def: all .2s ease;
 			border-radius: 1em;
 			background: rgb(157 157 157 / 11%);
 			text-decoration: none;
+			color: inherit;
 			transition: inherit;
 			&:hover {
 				border-color: #1e5354;
