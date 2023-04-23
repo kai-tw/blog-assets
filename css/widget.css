@@ -24,7 +24,7 @@
   margin: 0;
   opacity: 0.8;
 }
-.popular-post a {
+.popular-post a:hover {
   color: #0000ff;
 }
 
