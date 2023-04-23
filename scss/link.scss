@@ -1,3 +1,5 @@
+$transition_def: all .2s ease;
+
 .link-cloud {
 	display: flex;
 	margin: 0;
@@ -5,7 +7,7 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	list-style: none;
-	transition: all .2s ease;
+	transition: $transition_def;
 	.item {
 		display: block;
 		margin: .3125em;
@@ -17,5 +19,28 @@
 			background: rgb(157 157 157 / 11%);
 			text-decoration: none;
 		}
+	}
+}
+.link-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: $transition_def;
+	&:hover a {
+		opacity: .7;
+	}
+	a {
+		border: none;
+		color: inherit;
+		text-decoration: none;
+		transition: all .2s linear;
+		border-left: .3rem solid transparent;
+		&:hover {
+			opacity: 1;
+			border-color: #5f9ea0;
+		}
+	}
+	ul {
+		margin: 0 0 0 2rem;
 	}
 }

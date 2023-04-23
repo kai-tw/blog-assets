@@ -859,14 +859,6 @@ table figure {
 	width: 100%;
 }
 
-#site-aside a {
-	display: block;
-	border: none;
-	color: inherit;
-	text-decoration: none;
-	transition: all .2s linear;
-}
-
 @media screen and (max-width: 1280px) {
 	#site-aside {
 		transform: translateX(100%);
@@ -942,33 +934,6 @@ table figure {
 	margin-top: 2rem;
 	padding-top: 2rem;
 	border-top: 2px dotted rgba(0,0,0,.1);
-}
-
-.link-list {
-	margin: 1rem 0;
-	padding: 0;
-	list-style: none;
-}
-
-.link-list:hover a {
-	opacity: .7;
-}
-
-.link-list a {
-	border: none;
-	color: inherit;
-	text-decoration: none;
-	transition: all .2s linear;
-	border-left: .3rem solid transparent;
-}
-
-.link-list a:hover {
-	opacity: 1;
-	border-color: #5f9ea0;
-}
-
-.link-list ul {
-	margin: 0 0 0 2rem;
 }
 
 .share-box {
