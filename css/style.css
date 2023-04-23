@@ -926,7 +926,7 @@ img {
   }
 }
 
-.video {
+.video, .media {
   display: block;
   position: relative;
   margin: 2rem 0;
@@ -936,7 +936,10 @@ img {
   box-sizing: border-box;
 }
 .video iframe,
-.video video {
+.video video,
+.video img, .media iframe,
+.media video,
+.media img {
   position: absolute;
   top: 0;
   left: 0;
@@ -945,11 +948,11 @@ img {
   height: 100%;
 }
 
-.video-16by9 {
+.video-16by9, .media-16by9 {
   padding-bottom: 56.25%;
 }
 
-.video-4by3 {
+.video-4by3, .media-4by3 {
   padding-bottom: 75%;
 }
 
