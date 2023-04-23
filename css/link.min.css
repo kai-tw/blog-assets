@@ -1,1 +1,1 @@
-.link-cloud{display:flex;flex-wrap:wrap;flex-direction:row;transition:all .2s ease}.link-cloud .item{display:block;margin:.3125em}.link-cloud .item a{display:block;padding:.3125em .5em;border:none;border-radius:.5em;background:rgba(157,157,157,.11);text-decoration:none}
+.link-cloud{display:flex;margin:0;padding:0;flex-wrap:wrap;flex-direction:row;list-style:none;transition:all .2s ease}.link-cloud .item{display:block;margin:.3125em}.link-cloud .item a{display:block;padding:.3125em .5em;border:none;border-radius:.5em;background:rgba(157,157,157,.11);text-decoration:none}

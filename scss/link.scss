@@ -1,13 +1,14 @@
 .link-cloud {
 	display: flex;
+	margin: 0;
+	padding: 0;
 	flex-wrap: wrap;
 	flex-direction: row;
+	list-style: none;
 	transition: all .2s ease;
-	
 	.item {
 		display: block;
 		margin: .3125em;
-
 		a {
 			display: block;
 			padding: .3125em .5em;

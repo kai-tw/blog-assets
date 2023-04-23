@@ -1,7 +1,10 @@
 .link-cloud {
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
+  list-style: none;
   transition: all 0.2s ease;
 }
 .link-cloud .item {
