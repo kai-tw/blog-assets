@@ -21,12 +21,19 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
+                margin: .5em;
+                height: 2em;
+                line-height: 2em;
                 .icon {
                     display: block;
-                    margin-right: 1em;
+                    margin-right: .5em;
+                    height: inherit;
+                    line-height: inherit;
                 }
                 .content {
                     display: block;
+                    height: inherit;
+                    line-height: inherit;
                 }
             }
         }

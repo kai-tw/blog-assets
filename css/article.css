@@ -22,13 +22,20 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: 0.5em;
+  height: 2em;
+  line-height: 2em;
 }
 .site-article .article-header .article-info .item .icon {
   display: block;
-  margin-right: 1em;
+  margin-right: 0.5em;
+  height: inherit;
+  line-height: inherit;
 }
 .site-article .article-header .article-info .item .content {
   display: block;
+  height: inherit;
+  line-height: inherit;
 }
 .site-article h1, .site-article h2 {
   margin: 1.5em 0 0.5em;
