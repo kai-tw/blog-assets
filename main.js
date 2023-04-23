@@ -3,21 +3,21 @@ if (document.getElementsByClassName("twitter-tweet").length > 0)
 
 document.getElementById("site-header").addEventListener("click", function (e) {
 	switch (e.target.id) {
-	case "site-search-open":
-		document.getElementById("site-search").classList.add("open");
-		break;
-	case "site-search-close":
-		document.getElementById("site-search").classList.remove("open");
-		break;
-	case "site-nav-open":
-		document.getElementById("site-nav").classList.add("open");
-		break;
-	case "site-nav-close":
-		document.getElementById("site-nav").classList.remove("open");
-		break;
-	case "site-aside-toggle":
-		document.body.classList.toggle("site-aside-expanded");
-		break;
+		case "site-search-open":
+			document.getElementById("site-search").classList.add("open");
+			break;
+		case "site-search-close":
+			document.getElementById("site-search").classList.remove("open");
+			break;
+		case "site-nav-open":
+			document.getElementById("site-nav").classList.add("open");
+			break;
+		case "site-nav-close":
+			document.getElementById("site-nav").classList.remove("open");
+			break;
+		case "site-aside-btn":
+			document.body.classList.toggle("site-aside-expanded");
+			break;
 	}
 });
 
@@ -26,12 +26,12 @@ let lazyload = {};
 lazyload.img = {};
 lazyload.background = {};
 
-lazyload.main = function() {
+lazyload.main = function () {
 	lazyload.img.main();
 	lazyload.background.main();
 };
 
-lazyload.img.main = function() {
+lazyload.img.main = function () {
 	let observer = new IntersectionObserver(function (entries, observer) {
 		entries.forEach(function (entry) {
 			if (entry.isIntersecting) {
@@ -41,7 +41,7 @@ lazyload.img.main = function() {
 					img.classList.add("loaded");
 					entry.target.classList.add("done");
 				} else {
-					img.addEventListener("load", function() {
+					img.addEventListener("load", function () {
 						img.classList.add("loaded");
 						entry.target.classList.add("done");
 					});
@@ -59,12 +59,12 @@ lazyload.img.main = function() {
 	}
 };
 
-lazyload.background.main = function() {
+lazyload.background.main = function () {
 	let observer = new IntersectionObserver(function (entries, observer) {
 		entries.forEach(function (entry) {
 			if (entry.isIntersecting) {
 				let img = new Image;
-				img.onload = function() {
+				img.onload = function () {
 					entry.target.style.backgroundImage = 'url(' + entry.target.dataset.background + ')';
 					entry.target.classList.add("done");
 				};
@@ -153,7 +153,7 @@ ra.input = function (e) {
 
 /* Share box */
 if (document.getElementById("share-btn-hitbox")) {
-	document.getElementById("share-btn-hitbox").addEventListener("click", function() {
+	document.getElementById("share-btn-hitbox").addEventListener("click", function () {
 		this.parentNode.classList.toggle("expand");
 	});
 }
