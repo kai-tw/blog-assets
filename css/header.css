@@ -1,0 +1,59 @@
+#site-aside-toggle {
+  display: none;
+}
+#site-aside-toggle:hover {
+  border-color: #3e7b7d;
+  color: #fff;
+  background: #5f9ea0;
+}
+@media screen and (max-width: 1280px) {
+  #site-aside-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #eee;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  #site-aside-toggle {
+    top: 4rem;
+    right: 0;
+    margin: 0.5rem;
+  }
+}
+
+#site-nav-open {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #site-nav-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
+
+#site-nav-close {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #site-nav-close {
+    display: block;
+  }
+}
