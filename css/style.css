@@ -62,7 +62,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .mobile-msg {
-    display: block;
+    display: unset;
   }
 }
 

@@ -50,7 +50,7 @@ img {
 .mobile-msg {
     display: none;
     @media screen and (max-width: 768px) {
-        display: block;
+        display: unset;
     }
 }
 @import 'header.scss';
