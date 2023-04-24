@@ -217,6 +217,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .header-window {
+    top: unset;
     left: 0;
     bottom: 3rem;
     width: 100%;
@@ -842,7 +843,15 @@ img {
 }
 
 .share-box {
-  display: none;
+  display: flex;
+  flex-direction: row;
+}
+.share-box .share-btn {
+  flex: 1;
+  display: block;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
 }
 
 .video, .media {

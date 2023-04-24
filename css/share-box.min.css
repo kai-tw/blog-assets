@@ -1,1 +1,1 @@
-.share-box{display:none}
+.share-box{display:flex;flex-direction:row}.share-box .share-btn{flex:1;display:block;padding:.5rem;border:none;text-decoration:none}

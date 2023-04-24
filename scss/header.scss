@@ -138,6 +138,7 @@ $headerWidth: 10rem;
         visibility: visible;
     }
     @media screen and (max-width: 768px) {
+        top: unset;
         left: 0;
         bottom: 3rem;
         width: 100%;
