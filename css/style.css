@@ -480,9 +480,9 @@ img {
   display: none;
 }
 .site-article .article-footer .article-comments .comment:not(:first-child) {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-top: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
 }
 .site-article .article-footer .article-comments .toplevel-thread > ol {
   margin: 2rem 0;
@@ -540,9 +540,6 @@ img {
   font-family: "Material Symbols Outlined";
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   vertical-align: bottom;
-}
-.site-article .article-footer .article-comments .item-control {
-  display: block;
 }
 .site-article .article-footer .article-comments .item-control a {
   display: block;
@@ -649,6 +646,10 @@ img {
   .site-article .article-footer .promotion .panel {
     width: 100%;
   }
+}
+
+.blog-admin {
+  display: none;
 }
 
 .article-list {

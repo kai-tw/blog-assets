@@ -160,9 +160,9 @@
                 display: none;
             }
             .comment:not(:first-child) {
-                margin-top: 2rem;
+                margin-top: 1rem;
                 padding-top: 2rem;
-                border-top: 1px solid #eee;
+                border-top: 1px solid #ddd;
             }
             .toplevel-thread>ol {
                 margin: 2rem 0;
@@ -231,7 +231,6 @@
                 }
             }
             .item-control {
-                display: block;
                 a {
                     display: block;
                     padding: 1rem;
@@ -355,6 +354,9 @@
             }
         }
     }
+}
+.blog-admin {
+    display: none;
 }
 .article-list {
     display: flex;
