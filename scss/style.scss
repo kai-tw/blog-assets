@@ -1,4 +1,10 @@
-@import 'scrollbar.scss';
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
 html {
     font: 16px/2 'Microsoft JhengHei', sans-serif;
     scroll-behavior: smooth;

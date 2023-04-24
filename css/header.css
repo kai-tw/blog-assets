@@ -143,6 +143,7 @@
     top: unset;
     left: 0;
     bottom: 3rem;
+    border-top: 2px solid #aaa;
     width: 100%;
     max-width: 100%;
     max-height: calc(100% - 3rem - 3rem);
