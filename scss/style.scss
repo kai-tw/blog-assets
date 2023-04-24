@@ -75,14 +75,13 @@ img {
         'opsz' 48
 }
 @import 'header.scss';
-@import 'search.scss';
 @import 'button.scss';
 @import 'main.scss';
 @import 'article.scss';
 @import 'aside.scss';
 @import 'footer.scss';
 @import 'widget.scss';
-//@import 'share-box.scss';
+@import 'share-box.scss';
 @import 'media.scss';
 @import 'relative-article.scss';
 @import 'link.scss';

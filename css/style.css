@@ -854,6 +854,10 @@ img {
   color: #0000ff;
 }
 
+.share-box {
+  display: none;
+}
+
 .video, .media {
   display: block;
   position: relative;
