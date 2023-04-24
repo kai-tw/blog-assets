@@ -85,11 +85,17 @@ $headerWidth: 10rem;
         line-height: 3rem;
         text-align: center;
         box-sizing: border-box;
+        transition: all .2s ease;
         cursor: pointer;
+
+        &:hover,
+        &.active {
+            color: #fff;
+            background: #5f9ea0;
+        }
     }
     .home-btn {
         display: none;
-
         a {
             border: none;
             color: inherit;
@@ -99,7 +105,6 @@ $headerWidth: 10rem;
     #site-nav-btn,
     #site-aside-toggle {
         display: none;
-        transition: all .2s ease;
     }
     @media screen and (max-width: 768px) {
         flex-direction: row;
