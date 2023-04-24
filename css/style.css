@@ -36,9 +36,6 @@ body {
     z-index: 1;
     visibility: hidden;
   }
-  body.site-aside-expanded {
-    overflow: hidden;
-  }
   body.site-aside-expanded #site-aside {
     transform: none;
     opacity: 1;
@@ -180,6 +177,7 @@ img {
 #ctrl-panel #site-nav-btn,
 #ctrl-panel #site-aside-toggle {
   display: none;
+  transition: all 0.2s ease;
 }
 @media screen and (max-width: 768px) {
   #ctrl-panel {
@@ -263,6 +261,19 @@ img {
   padding: 0;
 }
 
+.site-button {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.site-button:hover {
+  color: #5f9ea0;
+}
+
 .search-keyword {
   position: relative;
   margin-bottom: 4rem;
@@ -290,19 +301,6 @@ img {
   .search-keyword {
     margin-top: 2rem;
   }
-}
-
-.site-button {
-  width: 100%;
-  height: 3rem;
-  line-height: 3rem;
-  color: inherit;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s linear;
-}
-.site-button:hover {
-  color: #5f9ea0;
 }
 
 #site-main {

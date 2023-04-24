@@ -99,6 +99,7 @@ $headerWidth: 10rem;
     #site-nav-btn,
     #site-aside-toggle {
         display: none;
+        transition: all .2s ease;
     }
     @media screen and (max-width: 768px) {
         flex-direction: row;
@@ -183,34 +184,5 @@ $headerWidth: 10rem;
     .search-submit {
         width: 4rem;
         padding: 0;
-    }
-}
-
-.search-keyword {
-    position: relative;
-    margin-bottom: 4rem;
-    line-height: 5rem;
-    font-size: 1.8em;
-    font-weight: lighter;
-    cursor: default;
-
-    &:before {
-        content: attr(data-label);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        max-width: 100%;
-        transform: translate(1rem, -50%);
-        color: rgb(123 123 123 / 8%);
-        font-size: 5rem;
-        font-weight: inherit;
-        text-transform: uppercase;
-        white-space: pre;
-        z-index: -1;
-        overflow: hidden;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-top: 2rem;
     }
 }
