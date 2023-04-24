@@ -158,7 +158,6 @@ img {
   flex-direction: column;
   width: inherit;
 }
-
 #ctrl-panel .header-btn {
   flex: 1;
   display: block;
@@ -169,7 +168,11 @@ img {
   box-sizing: border-box;
   cursor: pointer;
 }
-
+#ctrl-panel .home-btn,
+#ctrl-panel #site-nav-btn,
+#ctrl-panel #site-aside-toggle {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   #ctrl-panel {
     flex-direction: row;
@@ -180,7 +183,13 @@ img {
     border: 1px solid #eee;
     background: #fff;
   }
+  #ctrl-panel .home-btn,
+  #ctrl-panel #site-nav-btn,
+  #ctrl-panel #site-aside-toggle {
+    display: block;
+  }
 }
+
 .header-window {
   position: fixed;
   top: 0;
