@@ -13,7 +13,7 @@ document.getElementById("ctrl-panel").addEventListener("click", function (e) {
 			document.getElementById("site-share").classList.toggle("open");
 			break;
 		case "site-aside-toggle":
-			document.body.classList.toggle("site-aside-expanded");
+			document.getElementById("site-aside").classList.toggle("open");
 			break;
 	}
 });
