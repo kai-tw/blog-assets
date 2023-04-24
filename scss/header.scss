@@ -42,7 +42,7 @@
         color: inherit;
     }
 }
-
+/*
 #site-nav {
     height: calc(100% - 13rem);
     overflow-x: hidden;
@@ -70,8 +70,10 @@
         }
     }
 }
+
 #site-aside-toggle {
     display: none;
+
     &:hover {
         border-color: #3e7b7d;
         color: #fff;
@@ -96,14 +98,17 @@
         transition: all .2s linear;
         cursor: pointer;
     }
+
     @media screen and (max-width: 768px) {
         top: 4rem;
         right: 0;
         margin: .5rem;
     }
 }
+
 #site-nav-open {
     display: none;
+
     @media screen and (max-width: 768px) {
         display: block;
         position: fixed;
@@ -114,9 +119,11 @@
         line-height: 4rem;
     }
 }
+
 #site-nav-close {
     display: none;
+
     @media screen and (max-width: 768px) {
         display: block;
     }
-}
+}*/
