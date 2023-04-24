@@ -78,7 +78,7 @@ img {
   border-color: #eee;
   background: rgba(252, 252, 252, 0.9);
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 3;
 }
 @media screen and (max-width: 768px) {
   #site-header {
