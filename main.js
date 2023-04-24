@@ -20,12 +20,12 @@ document.getElementById("ctrl-panel").addEventListener("click", function (e) {
 	}
 	if (d) {
 		d.classList.toggle("open");
-		if (d.classList.contains("open"))
+		if (d.classList.contains("open")) {
 			if (!e.target.classList.contains("active"))
 				e.target.classList.add("active");
-			else
-				if (e.target.classList.contains("active"))
-					e.target.classList.remove("active");
+		}
+		else if (e.target.classList.contains("active"))
+			e.target.classList.remove("active");
 	}
 });
 
