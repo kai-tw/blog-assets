@@ -16,6 +16,13 @@ img {
     max-height: 100%;
     box-sizing: border-box;
 }
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
 @import 'header.scss';
 @import 'search.scss';
 @import 'button.scss';
