@@ -17,7 +17,7 @@
     @media screen and (max-width: 1280px) {
         transform: translateX(100%);
         opacity: 0;
-        background: var(--global-background);
+        background: #fff;
     }
     @media screen and (max-width: 768px) {
         top: 4rem;

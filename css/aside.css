@@ -19,7 +19,7 @@
   #site-aside {
     transform: translateX(100%);
     opacity: 0;
-    background: var(--global-background);
+    background: #fff;
   }
 }
 @media screen and (max-width: 768px) {
