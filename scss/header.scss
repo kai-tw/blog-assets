@@ -87,7 +87,15 @@ $headerWidth: 10rem;
         box-sizing: border-box;
         cursor: pointer;
     }
-    .home-btn,
+    .home-btn {
+        display: none;
+
+        a {
+            border: none;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
     #site-nav-btn,
     #site-aside-toggle {
         display: none;
