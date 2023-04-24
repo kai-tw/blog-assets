@@ -221,6 +221,8 @@ img {
     left: 0;
     bottom: 3rem;
     width: 100%;
+    max-height: calc(100% - 3rem - 3rem);
+    overflow: auto;
     transform: translateY(calc(100% + 3rem));
   }
   .header-window.open {
