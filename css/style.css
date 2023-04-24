@@ -191,6 +191,16 @@ img {
   transform: translateX(0);
   visibility: visible;
 }
+.header-window:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  z-index: -2;
+}
 @media screen and (max-width: 768px) {
   .header-window {
     top: unset;
@@ -740,6 +750,10 @@ img {
     width: auto;
     max-width: 20rem;
   }
+  #site-aside.open {
+    transform: none;
+    opacity: 1;
+  }
 }
 #site-aside .widget {
   margin-bottom: 2rem;
@@ -829,6 +843,7 @@ img {
   display: block;
   padding: 0.5rem;
   border: none;
+  height: 3rem;
   text-decoration: none;
 }
 
