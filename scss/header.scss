@@ -76,7 +76,7 @@ $headerWidth: 10rem;
     display: flex;
     flex-direction: column;
     width: inherit;
-
+    z-index: 0;
     .header-btn {
         flex: 1;
         display: block;
@@ -117,8 +117,6 @@ $headerWidth: 10rem;
     }
 }
 
-
-
 .header-window {
     position: fixed;
     top: 0;
@@ -129,7 +127,7 @@ $headerWidth: 10rem;
     width: 20rem;
     background: #fff;
     box-sizing: border-box;
-    transform: translateX(calc(-100% - 10rem));
+    transform: translateX(calc(-100% - $headerWidth));
     transition: all .2s ease;
     visibility: hidden;
     z-index: -1;
@@ -154,14 +152,8 @@ $headerWidth: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
     transition: all .2s linear;
-    transform: translateX(-100%);
     box-sizing: border-box;
-
-    &.open {
-        transform: none;
-    }
 
     @media screen and (max-width: 768px) {
         border: none;
