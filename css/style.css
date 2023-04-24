@@ -539,7 +539,7 @@ img {
   content: "reply";
   font-family: "Material Symbols Outlined";
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .site-article .article-footer .article-comments .item-control {
   display: block;
@@ -556,7 +556,7 @@ img {
   content: "delete_outline";
   font-family: "Material Symbols Outlined";
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .site-article .article-footer .article-comments .thread-count {
   display: block;
@@ -576,8 +576,9 @@ img {
   height: inherit;
   text-align: center;
   font-family: "Material Symbols Outlined";
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  vertical-align: middle;
+  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 48;
+  font-size: 24px;
+  line-height: 2rem;
 }
 .site-article .article-footer .article-comments .thread-expanded .thread-count a {
   transform: rotateZ(180deg);

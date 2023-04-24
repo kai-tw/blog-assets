@@ -227,7 +227,7 @@
                         'wght' 400,
                         'GRAD' 0,
                         'opsz' 48;
-                    vertical-align: middle;
+                    vertical-align: bottom;
                 }
             }
             .item-control {
@@ -248,7 +248,7 @@
                             'wght' 400,
                             'GRAD' 0,
                             'opsz' 48;
-                        vertical-align: middle;
+                        vertical-align: bottom;
                     }
                 }
             }
@@ -272,10 +272,11 @@
                         font-family: 'Material Symbols Outlined';
                         font-variation-settings:
                             'FILL' 0,
-                            'wght' 400,
+                            'wght' 900,
                             'GRAD' 0,
                             'opsz' 48;
-                        vertical-align: middle;
+                        font-size: 24px;
+                        line-height: 2rem;
                     }
                 }
             }
