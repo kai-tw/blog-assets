@@ -1,20 +1,31 @@
+'use strict';
 if (document.getElementsByClassName("twitter-tweet").length > 0)
 	document.head.appendChild(scriptNode("https://platform.twitter.com/widgets.js"));
 
 document.getElementById("ctrl-panel").addEventListener("click", function (e) {
+	let d;
 	switch (e.target.id) {
 		case "site-search-btn":
-			document.getElementById("site-search").classList.toggle("open");
+			d = document.getElementById("site-search");
 			break;
 		case "site-nav-btn":
-			document.getElementById("site-nav").classList.toggle("open");
+			d = document.getElementById("site-nav");
 			break;
 		case "site-share-btn":
-			document.getElementById("site-share").classList.toggle("open");
+			d = document.getElementById("site-share");
 			break;
 		case "site-aside-toggle":
-			document.getElementById("site-aside").classList.toggle("open");
+			d = document.getElementById("site-aside");
 			break;
+	}
+	if (d) {
+		d.classList.toggle("open");
+		if (d.classList.contains("open"))
+			if (!e.target.classList.contains("active"))
+				e.target.classList.add("active");
+			else
+				if (e.target.classList.contains("active"))
+					e.target.classList.remove("active");
 	}
 });
 
