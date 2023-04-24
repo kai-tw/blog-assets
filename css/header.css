@@ -101,6 +101,7 @@
   border: none;
   color: inherit;
   text-decoration: none;
+  transition: inherit;
 }
 #ctrl-panel #site-nav-btn,
 #ctrl-panel #site-aside-toggle {
