@@ -124,7 +124,7 @@ $headerWidth: 10rem;
     bottom: 0;
     padding: 1rem;
     border: 1px solid #eee;
-    width: 20rem;
+    max-width: 30rem;
     background: #fff;
     box-sizing: border-box;
     transform: translateX(calc(-100% - $headerWidth));
