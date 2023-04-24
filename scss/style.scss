@@ -1,5 +1,56 @@
 @import 'scrollbar.scss';
-@import 'critical.scss';
+html {
+    font: 16px/2 'Microsoft JhengHei', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0 20rem 0 10rem;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 1280px) {
+        margin: 0 0 0 10rem;
+
+        &:before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity .5s ease;
+            backdrop-filter: blur(.3rem);
+            z-index: 1;
+            visibility: hidden;
+        }
+
+        &.site-aside-expanded {
+            overflow: hidden;
+
+            #site-aside {
+                transform: none;
+                opacity: 1;
+            }
+
+            #site-aside-toggle {
+                transform: rotateZ(180deg);
+            }
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
+}
 a {
     border-bottom: 1px solid;
     color: #041fb6;

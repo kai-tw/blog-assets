@@ -1,3 +1,75 @@
+#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10rem;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #eee;
+    background: rgba(252, 252, 252, .9);
+    box-sizing: border-box;
+    z-index: 2;
+
+    @media screen and (max-width: 768px) {
+        border-width: 0 0 2px;
+        border-style: solid;
+        border-color: #eee;
+        right: 0;
+        bottom: unset;
+        width: auto;
+    }
+}
+
+#site-logo {
+    margin: 1rem;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 8rem;
+    color: inherit;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        width: auto;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    a {
+        padding: .5rem;
+        color: inherit;
+    }
+}
+
+#site-nav {
+    height: calc(100% - 13rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        background: #fff;
+        transform: translateX(-100%);
+        transition: all .2s linear;
+        z-index: 1;
+
+        &.open {
+            transform: none;
+        }
+    }
+}
 #site-aside-toggle {
     display: none;
     &:hover {
