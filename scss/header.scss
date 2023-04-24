@@ -76,21 +76,23 @@ $headerWidth: 10rem;
     display: flex;
     flex-direction: column;
     width: inherit;
-}
 
-#ctrl-panel .header-btn {
-    flex: 1;
-    display: block;
-    width: inherit;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    #ctrl-panel {
+    .header-btn {
+        flex: 1;
+        display: block;
+        width: inherit;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .home-btn,
+    #site-nav-btn,
+    #site-aside-toggle {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
         flex-direction: row;
         position: fixed;
         left: 0;
@@ -98,8 +100,16 @@ $headerWidth: 10rem;
         bottom: 0;
         border: 1px solid #eee;
         background: #fff;
+
+        .home-btn,
+        #site-nav-btn,
+        #site-aside-toggle {
+            display: block;
+        }
     }
 }
+
+
 
 .header-window {
     position: fixed;
