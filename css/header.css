@@ -156,13 +156,6 @@
   transition: all 0.2s linear;
   box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-  #site-search {
-    border: none;
-    width: 100%;
-    transform: none;
-  }
-}
 #site-search form {
   margin: 0 auto;
   border-bottom: 1px solid #bbb;

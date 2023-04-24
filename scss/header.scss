@@ -155,12 +155,6 @@ $headerWidth: 10rem;
     transition: all .2s linear;
     box-sizing: border-box;
 
-    @media screen and (max-width: 768px) {
-        border: none;
-        width: 100%;
-        transform: none;
-    }
-
     form {
         margin: 0 auto;
         border-bottom: 1px solid #bbb;
