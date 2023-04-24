@@ -51,6 +51,21 @@ img {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+@media screen and (max-width: 768px) {
+  .desktop-msg {
+    display: none;
+  }
+}
+
+.mobile-msg {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile-msg {
+    display: block;
+  }
+}
+
 #site-header {
   position: fixed;
   top: 0;
