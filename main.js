@@ -1,6 +1,23 @@
 if (document.getElementsByClassName("twitter-tweet").length > 0)
 	document.head.appendChild(scriptNode("https://platform.twitter.com/widgets.js"));
 
+document.getElementById("ctrl-panel").addEventListener("click", function (e) {
+	switch (e.target.id) {
+		case "site-search-btn":
+			document.getElementById("site-search").classList.toggle("open");
+			break;
+		case "site-nav-btn":
+			document.getElementById("site-nav").classList.toggle("open");
+			break;
+		case "site-share-btn":
+			document.getElementById("site-share").classList.toggle("open");
+			break;
+		case "site-aside-toggle":
+			document.body.classList.toggle("site-aside-expanded");
+			break;
+	}
+});
+
 let lazyload = {};
 
 lazyload.img = {};

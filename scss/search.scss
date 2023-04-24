@@ -1,13 +1,5 @@
 #site-search {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 30rem;
-    padding: 0 5%;
-    border-right: 1px solid #ddd;
-    background: #fff;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
@@ -16,13 +8,13 @@
     box-sizing: border-box;
 
     &.open {
-        transform: translateX(0);
+        transform: none;
     }
 
     @media screen and (max-width: 768px) {
         border: none;
         width: 100%;
-        transform: translateX(100%);
+        transform: none;
     }
 
     form {
@@ -53,16 +45,6 @@
     .search-submit {
         width: 4rem;
         padding: 0;
-    }
-}
-#site-search-btn {
-    @media screen and (max-width: 768px) {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 4rem;
-        height: 4rem;
-        line-height: 4rem;
     }
 }
 .search-keyword {
