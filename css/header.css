@@ -138,22 +138,13 @@
   transform: translateX(0);
   visibility: visible;
 }
-.header-window:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(10px);
-  z-index: -2;
-}
 @media screen and (max-width: 768px) {
   .header-window {
     top: unset;
     left: 0;
     bottom: 3rem;
     width: 100%;
+    max-width: 100%;
     max-height: calc(100% - 3rem - 3rem);
     overflow: auto;
     transform: translateY(calc(100% + 3rem));
