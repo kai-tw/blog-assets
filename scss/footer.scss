@@ -3,6 +3,10 @@
     border-width: 1px 0 0;
     border-style: solid;
     border-color: #eee;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 3rem;
+    }
 }
 #footer-widgets {
     display: flex;
