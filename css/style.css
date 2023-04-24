@@ -537,7 +537,9 @@ img {
 }
 .site-article .article-footer .article-comments .comment-reply:before {
   content: "reply";
-  font: normal 24px "Material Icons";
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
 }
 .site-article .article-footer .article-comments .item-control {
   display: block;
@@ -552,7 +554,9 @@ img {
 }
 .site-article .article-footer .article-comments .item-control a:before {
   content: "delete_outline";
-  font: normal 24px "Material Icons";
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
 }
 .site-article .article-footer .article-comments .thread-count {
   display: block;
@@ -571,7 +575,9 @@ img {
   width: inherit;
   height: inherit;
   text-align: center;
-  font: normal 24px/2rem "Material Icons";
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
 }
 .site-article .article-footer .article-comments .thread-expanded .thread-count a {
   transform: rotateZ(180deg);

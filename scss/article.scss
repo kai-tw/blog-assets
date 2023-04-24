@@ -221,7 +221,13 @@
                 }
                 &:before {
                     content: 'reply';
-                    font: normal 24px 'Material Icons';
+                    font-family: 'Material Symbols Outlined';
+                    font-variation-settings:
+                        'FILL' 0,
+                        'wght' 400,
+                        'GRAD' 0,
+                        'opsz' 48;
+                    vertical-align: middle;
                 }
             }
             .item-control {
@@ -236,7 +242,13 @@
                     }
                     &:before {
                         content: 'delete_outline';
-                        font: normal 24px 'Material Icons';
+                        font-family: 'Material Symbols Outlined';
+                        font-variation-settings:
+                            'FILL' 0,
+                            'wght' 400,
+                            'GRAD' 0,
+                            'opsz' 48;
+                        vertical-align: middle;
                     }
                 }
             }
@@ -257,7 +269,13 @@
                         width: inherit;
                         height: inherit;
                         text-align: center;
-                        font: normal 24px/2rem 'Material Icons';
+                        font-family: 'Material Symbols Outlined';
+                        font-variation-settings:
+                            'FILL' 0,
+                            'wght' 400,
+                            'GRAD' 0,
+                            'opsz' 48;
+                        vertical-align: middle;
                     }
                 }
             }
