@@ -5,12 +5,17 @@
 }
 .share-box .share-btn {
   display: block;
-  padding: 0;
+  padding: 0.5rem;
   border: none;
   width: 3rem;
   height: 3rem;
   text-decoration: none;
   box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .share-box .share-btn {
+    padding: 0;
+  }
 }
 .share-box .share-btn svg {
   max-width: 100%;
