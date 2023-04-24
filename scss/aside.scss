@@ -25,6 +25,10 @@
         padding-top: 4rem;
         width: auto;
         max-width: 20rem;
+        &.open {
+            transform: none;
+            opacity: 1;
+        }
     }
     .widget {
         margin-bottom: 2rem;

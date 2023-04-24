@@ -23,30 +23,6 @@ body {
   body {
     margin: 0 0 0 10rem;
   }
-  body:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    backdrop-filter: blur(0.3rem);
-    z-index: 1;
-    visibility: hidden;
-  }
-  body.site-aside-expanded #site-aside {
-    transform: none;
-    opacity: 1;
-  }
-  body.site-aside-expanded #site-aside-toggle {
-    transform: rotateZ(180deg);
-  }
-  body.site-aside-expanded:before {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 @media screen and (max-width: 768px) {
   body {

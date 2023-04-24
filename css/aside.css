@@ -30,6 +30,10 @@
     width: auto;
     max-width: 20rem;
   }
+  #site-aside.open {
+    transform: none;
+    opacity: 1;
+  }
 }
 #site-aside .widget {
   margin-bottom: 2rem;
