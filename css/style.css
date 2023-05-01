@@ -324,6 +324,10 @@ img {
 .site-article {
   letter-spacing: 0.1em;
 }
+.site-article:not(:first-child) {
+  padding-top: 2rem;
+  border-top: 1px dashed #ccc;
+}
 .site-article .article-header {
   margin: 2rem 0;
   color: #333;

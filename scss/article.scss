@@ -1,5 +1,10 @@
 .site-article {
     letter-spacing: .1em;
+
+    &:not(:first-child) {
+        padding-top: 2rem;
+        border-top: 1px dashed #ccc;
+    }
     .article-header {
         margin: 2rem 0;
         color: #333;
