@@ -15,7 +15,7 @@ html {
 body {
   position: relative;
   margin: 0 20rem 0 10rem;
-  color: #050334;
+  color: #070620;
   background: #fff;
   overflow: hidden;
 }
@@ -346,7 +346,6 @@ img {
 }
 .site-article .article-header {
   margin: 2rem 0;
-  color: #333;
 }
 .site-article .article-header a {
   color: inherit;
