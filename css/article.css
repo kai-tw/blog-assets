@@ -119,6 +119,10 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.site-article .article-info a {
+  color: inherit;
+  font-weight: bolder;
+}
 .site-article .article-info .item {
   display: flex;
   flex-direction: row;
