@@ -18,6 +18,10 @@
         transform: translateX(100%);
         opacity: 0;
         background: #fff;
+        &.open {
+            transform: none;
+            opacity: 1;
+        }
     }
     @media screen and (max-width: 768px) {
         top: 4rem;
@@ -25,10 +29,6 @@
         padding-top: 4rem;
         width: auto;
         max-width: 20rem;
-        &.open {
-            transform: none;
-            opacity: 1;
-        }
     }
     .widget {
         margin-bottom: 2rem;

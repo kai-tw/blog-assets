@@ -768,6 +768,10 @@ img {
     opacity: 0;
     background: #fff;
   }
+  #site-aside.open {
+    transform: none;
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 768px) {
   #site-aside {
@@ -776,10 +780,6 @@ img {
     padding-top: 4rem;
     width: auto;
     max-width: 20rem;
-  }
-  #site-aside.open {
-    transform: none;
-    opacity: 1;
   }
 }
 #site-aside .widget {
