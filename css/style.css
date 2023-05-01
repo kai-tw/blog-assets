@@ -17,12 +17,12 @@ body {
   margin: 0 20rem 0 10rem;
   color: #070620;
   background: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 @media screen and (max-width: 1280px) {
   body {
     margin: 0 0 0 10rem;
-    overflow-y: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -307,15 +307,11 @@ img {
   display: block;
   padding: 5rem 2.5rem;
   box-sizing: border-box;
-  height: 100vh;
-  overflow: auto;
 }
 @media screen and (max-width: 768px) {
   #site-main {
     margin: 0 5%;
     padding: 5rem 5%;
-    height: unset;
-    overflow: unset;
   }
 }
 
