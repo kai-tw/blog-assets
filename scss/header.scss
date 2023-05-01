@@ -48,7 +48,9 @@ $headerWidth: 10rem;
     height: calc(100% - 2 * 3rem - $headerWidth);
     overflow-x: hidden;
     overflow-y: auto;
-
+    @media screen and (max-width: 1280px) {
+        height: calc(100% - 3 * 3rem - $headerWidth);
+    }
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -106,6 +108,11 @@ $headerWidth: 10rem;
     #site-nav-btn,
     #site-aside-toggle {
         display: none;
+    }
+    @media screen and (max-width: 1280px) {
+        #site-aside-toggle {
+            display: block;
+        }
     }
     @media screen and (max-width: 768px) {
         flex-direction: row;

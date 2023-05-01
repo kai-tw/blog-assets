@@ -49,6 +49,11 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+@media screen and (max-width: 1280px) {
+  #site-nav {
+    height: calc(100% - 9rem - 10rem);
+  }
+}
 @media screen and (max-width: 768px) {
   #site-nav {
     display: flex;
@@ -106,6 +111,11 @@
 #ctrl-panel #site-nav-btn,
 #ctrl-panel #site-aside-toggle {
   display: none;
+}
+@media screen and (max-width: 1280px) {
+  #ctrl-panel #site-aside-toggle {
+    display: block;
+  }
 }
 @media screen and (max-width: 768px) {
   #ctrl-panel {
