@@ -12,31 +12,6 @@
             margin: 1rem 0;
             font-size: 2rem;
         }
-        .article-info {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .item {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                margin: .5em;
-                height: 2em;
-                line-height: 2em;
-                .icon {
-                    display: block;
-                    margin-right: .5em;
-                    height: inherit;
-                    line-height: inherit;
-                }
-                .content {
-                    display: block;
-                    height: inherit;
-                    line-height: inherit;
-                }
-            }
-        }
     }
     h1, h2 {
         margin: 1.5em 0 .5em;
@@ -136,6 +111,33 @@
     mark {
         background: linear-gradient(transparent 50%, #fff799 0%);
         color: inherit;
+    }
+    .article-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: .5em;
+            height: 2em;
+            line-height: 2em;
+
+            .icon {
+                display: block;
+                margin-right: .5em;
+                height: inherit;
+                line-height: inherit;
+            }
+
+            .content {
+                display: block;
+                height: inherit;
+                line-height: inherit;
+            }
+        }
     }
     .article-footer {
         margin: 4rem 0;
