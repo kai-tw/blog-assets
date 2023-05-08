@@ -40,8 +40,9 @@
   padding: 0.5em;
 }
 .site-article figure figcaption {
-  color: gray;
+  color: #303030;
   line-height: 2;
+  font-size: 0.9em;
 }
 .site-article figure figcaption a {
   color: inherit;
