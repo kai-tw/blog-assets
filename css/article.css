@@ -70,8 +70,9 @@
   max-width: unset;
 }
 .site-article table {
-  margin: 1em 0;
+  margin: 1em auto;
   display: block;
+  max-width: 680px;
   width: 100%;
   border-collapse: collapse;
   overflow: auto;
@@ -151,15 +152,12 @@
   line-height: inherit;
 }
 .site-article .article-footer {
-  margin: 4rem 0;
+  margin: 4rem auto;
+  max-width: 680px;
 }
 .site-article .article-footer h4 {
   margin: 2rem 0;
   font-size: 1rem;
-}
-.site-article .article-footer .article-comments {
-  margin: 0 auto;
-  max-width: 680px;
 }
 .site-article .article-footer .article-comments iframe {
   border: none;
