@@ -1,3 +1,5 @@
+$articleWidth: 680px;
+
 .site-article {
     letter-spacing: .1em;
 
@@ -6,8 +8,8 @@
         border-top: 1px dashed #ccc;
     }
     .article-header {
-        margin: 2rem 0;
-
+        margin: 2rem auto;
+        max-width: $articleWidth;
         a {
             color: inherit;
             font-weight: bolder;
@@ -18,11 +20,13 @@
         }
     }
     h1, h2 {
-        margin: 1.5em 0 .5em;
+        margin: 1.5em auto .5em;
         font-size: 1.5rem;
+        max-width: $articleWidth;
     }
     h3, h4, h5, h6 {
-        margin: 1.5em 0 .5em;
+        margin: 1.5em auto .5em;
+        max-width: $articleWidth;
     }
     figure {
         position: relative;
@@ -53,16 +57,19 @@
     }
     p,
     pre {
-        margin: 1em 0;
+        margin: 1em auto;
+        max-width: $articleWidth;
     }
     ul,
     ol {
-        margin: 1em 0;
-        padding: 0 0 0 2rem;
+        margin: 1em auto;
+        padding: 0 2rem;
+        max-width: $articleWidth;
         ul,
         ol {
             margin-top: 0;
             margin-bottom: 0;
+            max-width: unset;
         }
     }
     table {
@@ -101,14 +108,16 @@
         background: rgba(0, 0, 0, .1);
     }
     blockquote {
-        margin: 1em 0;
+        margin: 1em auto;
         padding: 0 2rem;
         border-left: .2rem solid;
+        max-width: $articleWidth;
         word-break: break-all;
     }
     hr {
-        margin: 1em 0;
+        margin: 1em auto;
         border: none;
+        max-width: $articleWidth;
         height: 1px;
         background-image: linear-gradient(90deg, transparent, #333, transparent);
     }
@@ -154,6 +163,8 @@
             font-size: 1rem;
         }
         .article-comments {
+            margin: 0 auto;
+            max-width: $articleWidth;
             iframe {
                 border: none;
                 width: 100%;
