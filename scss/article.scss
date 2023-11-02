@@ -1,7 +1,7 @@
 $articleWidth: 680px;
 
 .site-article {
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     &:not(:first-child) {
         padding-top: 2rem;
@@ -19,13 +19,17 @@ $articleWidth: 680px;
             font-size: 2rem;
         }
     }
-    h1, h2 {
-        margin: 1.5em auto .5em;
+    h1,
+    h2 {
+        margin: 1.5em auto 0.5em;
         font-size: 1.5rem;
         max-width: $articleWidth;
     }
-    h3, h4, h5, h6 {
-        margin: 1.5em auto .5em;
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1.5em auto 0.5em;
         max-width: $articleWidth;
     }
     figure {
@@ -33,20 +37,20 @@ $articleWidth: 680px;
         margin: 2rem 1rem;
         text-align: center;
         line-height: 1;
-    
+
         picture {
             display: block;
             width: 100%;
         }
-    
+
         img {
-            padding: .5em;
+            padding: 0.5em;
         }
-    
+
         figcaption {
             color: #303030;
             line-height: 2;
-            font-size: .9em;
+            font-size: 0.9em;
             a {
                 color: inherit;
             }
@@ -56,7 +60,8 @@ $articleWidth: 680px;
         display: none;
     }
     p,
-    pre {
+    pre,
+    .google-auto-placed {
         margin: 1em auto;
         max-width: $articleWidth;
     }
@@ -84,7 +89,7 @@ $articleWidth: 680px;
         }
         td,
         th {
-            padding: .5rem 1rem;
+            padding: 0.5rem 1rem;
             border: 1px solid #ccc;
             word-break: keep-all;
         }
@@ -104,14 +109,14 @@ $articleWidth: 680px;
         }
     }
     code {
-        padding: .3rem .5rem;
-        border-radius: .5rem;
-        background: rgba(0, 0, 0, .1);
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.5rem;
+        background: rgba(0, 0, 0, 0.1);
     }
     blockquote {
         margin: 1em auto;
         padding: 0 2rem;
-        border-left: .2rem solid;
+        border-left: 0.2rem solid;
         max-width: $articleWidth;
         word-break: break-all;
     }
@@ -139,13 +144,13 @@ $articleWidth: 680px;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            margin: .5em;
+            margin: 0.5em;
             height: 2em;
             line-height: 2em;
 
             .icon {
                 display: block;
-                margin-right: .5em;
+                margin-right: 0.5em;
                 height: inherit;
                 line-height: inherit;
             }
@@ -185,7 +190,7 @@ $articleWidth: 680px;
                 padding-top: 2rem;
                 border-top: 1px solid #ddd;
             }
-            .toplevel-thread>ol {
+            .toplevel-thread > ol {
                 margin: 2rem 0;
                 padding: 0;
                 list-style: none;
@@ -212,7 +217,7 @@ $articleWidth: 680px;
                     }
                     .datetime {
                         a {
-                            font-size: .8rem;
+                            font-size: 0.8rem;
                             color: #999;
                         }
                     }
@@ -228,7 +233,7 @@ $articleWidth: 680px;
             }
             .thread-toggle {
                 display: block;
-            
+
                 a:hover {
                     color: #5f9ea0;
                 }
@@ -236,18 +241,18 @@ $articleWidth: 680px;
             .comment-reply {
                 display: block;
                 padding: 1rem;
-                transition: all .2s linear;
+                transition: all 0.2s linear;
                 &:hover {
                     color: #5f9ea0;
                 }
                 &:before {
-                    content: 'reply';
-                    font-family: 'Material Symbols Outlined';
+                    content: "reply";
+                    font-family: "Material Symbols Outlined";
                     font-variation-settings:
-                        'FILL' 0,
-                        'wght' 400,
-                        'GRAD' 0,
-                        'opsz' 48;
+                        "FILL" 0,
+                        "wght" 400,
+                        "GRAD" 0,
+                        "opsz" 48;
                     vertical-align: bottom;
                 }
             }
@@ -255,19 +260,19 @@ $articleWidth: 680px;
                 a {
                     display: block;
                     padding: 1rem;
-                    transition: all .2s linear;
-                
+                    transition: all 0.2s linear;
+
                     &:hover {
                         color: #5f9ea0;
                     }
                     &:before {
-                        content: 'delete_outline';
-                        font-family: 'Material Symbols Outlined';
+                        content: "delete_outline";
+                        font-family: "Material Symbols Outlined";
                         font-variation-settings:
-                            'FILL' 0,
-                            'wght' 400,
-                            'GRAD' 0,
-                            'opsz' 48;
+                            "FILL" 0,
+                            "wght" 400,
+                            "GRAD" 0,
+                            "opsz" 48;
                         vertical-align: bottom;
                     }
                 }
@@ -284,17 +289,17 @@ $articleWidth: 680px;
                     font-size: 0;
 
                     &:before {
-                        content: 'expand_more';
+                        content: "expand_more";
                         display: inherit;
                         width: inherit;
                         height: inherit;
                         text-align: center;
-                        font-family: 'Material Symbols Outlined';
+                        font-family: "Material Symbols Outlined";
                         font-variation-settings:
-                            'FILL' 0,
-                            'wght' 900,
-                            'GRAD' 0,
-                            'opsz' 48;
+                            "FILL" 0,
+                            "wght" 900,
+                            "GRAD" 0,
+                            "opsz" 48;
                         font-size: 24px;
                         line-height: 2rem;
                     }
@@ -333,7 +338,7 @@ $articleWidth: 680px;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: linear-gradient(to right, transparent, rgba(0, 0, 0, .7) 50%, rgba(0, 0, 0, .7));
+                background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.7));
                 z-index: 1;
             }
             a {
@@ -360,14 +365,14 @@ $articleWidth: 680px;
                     font-weight: bolder;
 
                     span {
-                        margin: 0 .5rem;
+                        margin: 0 0.5rem;
                         vertical-align: text-bottom;
                     }
                 }
             }
             @media screen and (max-width: 768px) {
                 &:before {
-                    background: rgba(0, 0, 0, .7);
+                    background: rgba(0, 0, 0, 0.7);
                 }
                 .panel {
                     width: 100%;
@@ -385,7 +390,7 @@ $articleWidth: 680px;
     align-items: center;
     position: relative;
     margin: 3rem 0;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     z-index: 0;
     .article-thumbnail {
         display: block;
