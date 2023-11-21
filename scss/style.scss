@@ -6,7 +6,9 @@
     background-color: #aaa;
 }
 html {
-    font: 16px/2 'Microsoft JhengHei', sans-serif;
+    font:
+        16px/2 "Microsoft JhengHei",
+        sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -30,7 +32,7 @@ a {
     border-bottom: 1px solid;
     color: #041fb6;
     text-decoration: none;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     word-break: break-all;
 
     &:hover {
@@ -43,12 +45,16 @@ img {
     height: auto;
     box-sizing: border-box;
 }
+iframe {
+    width: 100%;
+    border: none;
+}
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 48;
     vertical-align: middle;
 }
 .desktop-msg {
@@ -62,13 +68,13 @@ img {
         display: unset;
     }
 }
-@import 'header.scss';
-@import 'main.scss';
-@import 'article.scss';
-@import 'aside.scss';
-@import 'footer.scss';
-@import 'widget.scss';
-@import 'share-box.scss';
-@import 'media.scss';
-@import 'relative-article.scss';
-@import 'link.scss';
+@import "header.scss";
+@import "main.scss";
+@import "article.scss";
+@import "aside.scss";
+@import "footer.scss";
+@import "widget.scss";
+@import "share-box.scss";
+@import "media.scss";
+@import "relative-article.scss";
+@import "link.scss";
