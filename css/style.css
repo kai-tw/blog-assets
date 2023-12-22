@@ -358,12 +358,6 @@ iframe {
   margin: 1rem 0;
   font-size: 2rem;
 }
-.site-article section {
-  margin: 2em -2em;
-  padding: 2em;
-  border: 1px solid #bbb;
-  border-radius: 2em;
-}
 .site-article h1,
 .site-article h2 {
   margin: 1.5em auto 0.5em;
