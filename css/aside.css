@@ -1,0 +1,45 @@
+#site-aside {
+  position: fixed;
+  top: 0;
+  right: 1px;
+  bottom: 0;
+  padding: 5rem 1rem;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #eee;
+  width: 20rem;
+  background: #fff;
+  overflow: auto;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+  z-index: 1;
+  font-size: 0.9em;
+}
+@media screen and (max-width: 1280px) {
+  #site-aside {
+    transform: translateX(100%);
+    opacity: 0;
+    background: #fff;
+  }
+  #site-aside.open {
+    transform: none;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  #site-aside {
+    top: 4rem;
+    right: 0;
+    padding-top: 4rem;
+    width: auto;
+    max-width: 20rem;
+  }
+}
+#site-aside .widget {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #aaa;
+}
+#site-aside img {
+  width: 100%;
+}
