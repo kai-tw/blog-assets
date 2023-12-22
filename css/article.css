@@ -118,11 +118,11 @@
   word-break: break-all;
 }
 .site-article hr {
-  margin: 1em auto;
+  margin: 4em auto;
   border: none;
   max-width: 680px;
-  height: 1px;
-  background-image: linear-gradient(90deg, transparent, #333, transparent);
+  height: 2px;
+  background: #1c2358;
 }
 .site-article mark {
   background: linear-gradient(transparent 50%, #fff799 0%);
