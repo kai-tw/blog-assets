@@ -38,6 +38,10 @@ a {
     &:hover {
         color: #0000ff;
     }
+
+    &:visited {
+        color: #474747;
+    }
 }
 img {
     max-width: 100%;

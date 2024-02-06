@@ -41,6 +41,9 @@ a {
 a:hover {
   color: #0000ff;
 }
+a:visited {
+  color: #474747;
+}
 
 img {
   max-width: 100%;
