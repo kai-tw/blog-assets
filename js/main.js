@@ -13,9 +13,11 @@ document.getElementById("site-nav-dummy").addEventListener("click", closeSiteNav
 function openSiteNav() {
 	document.getElementById("site-nav-list").classList.add("show");
 	document.getElementById("site-nav-dummy").classList.add("show");
+	document.body.classList.add("no-scrolling");
 }
 
 function closeSiteNav() {
 	document.getElementById("site-nav-list").classList.remove("show");
 	document.getElementById("site-nav-dummy").classList.remove("show");
+	document.body.classList.remove("no-scrolling");
 }
