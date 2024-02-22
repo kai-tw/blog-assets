@@ -1,23 +1,22 @@
 'use strict';
 
 /**
- * Event listeners.
- */
-document.getElementById("site-nav-open-button").addEventListener("click", openSiteNav);
-document.getElementById("site-nav-close-button").addEventListener("click", closeSiteNav);
-document.getElementById("site-nav-dummy").addEventListener("click", closeSiteNav);
+* Event listeners.
+*/
+document.getElementById("site-nav-toggle-button").addEventListener("click", toggleSiteNav);
 
 /**
- * Function definitions.
- */
-function openSiteNav() {
-	document.getElementById("site-nav-list").classList.add("show");
-	document.getElementById("site-nav-dummy").classList.add("show");
-	document.body.classList.add("on-site-nav-open");
-}
+* Function definitions.
+*/
+function toggleSiteNav() {
+	document.getElementById("site-nav").classList.toggle("show");
 
-function closeSiteNav() {
-	document.getElementById("site-nav-list").classList.remove("show");
-	document.getElementById("site-nav-dummy").classList.remove("show");
-	document.body.classList.remove("on-site-nav-open");
+	const isShow = document.getElementById("site-nav").classList.contains("show");
+	if (isShow) {
+		document.getElementById("site-nav-toggle-button").classList.add("close");
+		document.body.classList.add("on-site-nav-open");
+	} else {
+		document.getElementById("site-nav-toggle-button").classList.remove("close");
+		document.body.classList.remove("on-site-nav-open");
+	}
 }
