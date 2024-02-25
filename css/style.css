@@ -886,7 +886,7 @@ iframe {
 }
 .widget.PopularPosts .list-item {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin: 0 0 48px 0;
 }
 .widget.PopularPosts .list-item .article-thumbnail {
@@ -896,6 +896,7 @@ iframe {
   background: #1e1c21;
   text-align: center;
   line-height: 3;
+  overflow: hidden;
 }
 .widget.PopularPosts .list-item .article-header {
   flex: 1;
