@@ -82,8 +82,8 @@
   flex-wrap: wrap;
   margin: 8px 0;
 }
-.widget.Blog .article-label-list .label-item:not(:first-child) {
-  margin-left: 16px;
+.widget.Blog .article-label-list .label-item {
+  margin: 2px;
 }
 .widget.Blog .article-read-more {
   display: flex;

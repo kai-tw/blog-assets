@@ -95,9 +95,7 @@ $gradienBorderPadding: 8px;
         margin: 8px 0;
 
         .label-item {
-            &:not(:first-child) {
-                margin-left: 16px;
-            }
+            margin: 2px;
         }
     }
 
