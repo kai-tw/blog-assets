@@ -1,0 +1,33 @@
+@import "mixin-site-button.scss";
+
+/**
+ *  Style definition
+ */
+
+.site-button {
+    @include site-button();
+
+    .icon {
+        @include site-button-icon();
+    }
+
+    .label {
+        @include site-button-label();
+    }
+
+    &.icon-expand {
+        @include site-buttion-icon-expand();
+    }
+
+    &.action {
+        @include site-button-action();
+
+        .icon {
+            @include site-button-action-icon();
+        }
+    }
+
+    &:hover {
+        @include site-button-hover();
+    }
+}

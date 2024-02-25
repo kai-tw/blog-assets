@@ -1,0 +1,29 @@
+.widget.PopularPosts {
+  margin: 32px auto;
+  max-width: 680px;
+}
+.widget.PopularPosts .list-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 48px 0;
+}
+.widget.PopularPosts .list-item .article-thumbnail {
+  margin: 0 48px 0 0;
+  border-radius: 16px;
+  width: 100px;
+  background: #1e1c21;
+  text-align: center;
+  line-height: 3;
+}
+.widget.PopularPosts .list-item .article-header {
+  flex: 1;
+}
+.widget.PopularPosts .list-item .article-title {
+  margin: 0;
+}
+.widget.PopularPosts .list-item .article-snippet {
+  margin: 24px 0;
+}
+.widget.PopularPosts .list-item .article-read-more {
+  display: flex;
+}

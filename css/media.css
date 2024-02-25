@@ -1,7 +1,7 @@
-.video, .media {
+.video,
+.media {
   display: block;
   position: relative;
-  margin: 2rem 0;
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -9,7 +9,8 @@
 }
 .video iframe,
 .video video,
-.video img, .media iframe,
+.video img,
+.media iframe,
 .media video,
 .media img {
   position: absolute;
@@ -20,10 +21,17 @@
   height: 100%;
 }
 
-.video-16by9, .media-16by9 {
+.video-16by9,
+.media-16by9 {
   padding-bottom: 56.25%;
 }
 
-.video-4by3, .media-4by3 {
+.video-4by3,
+.media-4by3 {
   padding-bottom: 75%;
+}
+
+.video-4by3,
+.media-1by1 {
+  padding-bottom: 100%;
 }
