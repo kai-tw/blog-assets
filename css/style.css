@@ -839,7 +839,7 @@ iframe {
 }
 .widget.Blog .article-label-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 8px 0;
 }
 .widget.Blog .article-label-list .label-item:not(:first-child) {
