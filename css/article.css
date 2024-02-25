@@ -118,10 +118,10 @@
   border: none;
   max-width: 680px;
   height: 2px;
-  background: #1c2358;
+  background: #b83874;
 }
 .site-article mark {
-  background: linear-gradient(transparent 50%, #fff799 0%);
+  background: linear-gradient(transparent 50%, #710000 0%);
   color: inherit;
 }
 .site-article video,
