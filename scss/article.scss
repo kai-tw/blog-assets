@@ -132,8 +132,8 @@ $articleWidth: 680px;
         margin: 4em auto;
         border: none;
         max-width: $articleWidth;
-        height: 2px;
-        background: #b83874;
+        height: 8px;
+        background: url("https://kai-tw.github.io/blog-assets/img/icon/dot-menu-more-dark.svg") center/contain no-repeat;
     }
 
     mark {

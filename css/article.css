@@ -117,8 +117,8 @@
   margin: 4em auto;
   border: none;
   max-width: 680px;
-  height: 2px;
-  background: #b83874;
+  height: 8px;
+  background: url("https://kai-tw.github.io/blog-assets/img/icon/dot-menu-more-dark.svg") center/contain no-repeat;
 }
 .site-article mark {
   background: linear-gradient(transparent 50%, #710000 0%);
