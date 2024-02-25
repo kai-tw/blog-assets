@@ -1,10 +1,6 @@
 .site-article {
   letter-spacing: 0.1em;
 }
-.site-article:not(:first-child) {
-  padding-top: 2rem;
-  border-top: 1px dashed #ccc;
-}
 .site-article .article-header {
   margin: 2rem auto;
   max-width: 680px;
@@ -20,7 +16,8 @@
 .site-article h1,
 .site-article h2 {
   margin: 1.5em auto 0.5em;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
   max-width: 680px;
 }
 .site-article h3,
@@ -32,24 +29,23 @@
 }
 .site-article figure {
   position: relative;
-  margin: 2rem 1rem;
+  margin: 2rem 0;
   text-align: center;
   line-height: 1;
 }
-.site-article figure picture {
-  display: block;
-  width: 100%;
-}
-.site-article figure img {
-  padding: 0.5em;
-}
 .site-article figure figcaption {
-  color: #303030;
+  margin-top: 8px;
+  color: #cfcfcf;
   line-height: 2;
   font-size: 0.9em;
 }
 .site-article figure figcaption a {
   color: inherit;
+}
+.site-article picture {
+  display: block;
+  margin: 2rem auto;
+  max-width: 680px;
 }
 .site-article .snippet {
   display: none;
@@ -128,6 +124,10 @@
   background: linear-gradient(transparent 50%, #fff799 0%);
   color: inherit;
 }
+.site-article video,
+.site-article .media {
+  margin: 2rem 0;
+}
 .site-article .article-info {
   display: flex;
   flex-direction: row;
@@ -166,6 +166,7 @@
 }
 .site-article .article-footer .article-comments iframe {
   border: none;
+  border-radius: 16px;
   width: 100%;
 }
 .site-article .article-footer .article-comments a {
@@ -173,16 +174,14 @@
   color: inherit;
   text-decoration: none;
 }
+.site-article .article-footer .article-comments .comment {
+  margin-top: 48px;
+}
 .site-article .article-footer .article-comments .hidden,
 .site-article .article-footer .article-comments .blog-author,
 .site-article .article-footer .article-comments .thread-arrow,
 .site-article .article-footer .article-comments .comment-replies .thread-chrome.thread-collapsed {
   display: none;
-}
-.site-article .article-footer .article-comments .comment:not(:first-child) {
-  margin-top: 1rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
 }
 .site-article .article-footer .article-comments .toplevel-thread > ol {
   margin: 2rem 0;
@@ -205,86 +204,115 @@
   width: calc(100% - 35px);
   box-sizing: border-box;
 }
-.site-article .article-footer .article-comments .comment-block .comment-header .user {
+.site-article .article-footer .article-comments .comment-header .user {
   margin-right: 1rem;
   font-style: normal;
 }
-.site-article .article-footer .article-comments .comment-block .comment-header .datetime a {
+.site-article .article-footer .article-comments .comment-header .datetime a {
   font-size: 0.8rem;
   color: #999;
 }
-.site-article .article-footer .article-comments .comment-block .comment-content {
+.site-article .article-footer .article-comments .comment-content {
   word-break: break-word;
 }
-.site-article .article-footer .article-comments .comment-block .comment-actions {
+.site-article .article-footer .article-comments .comment-actions {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.site-article .article-footer .article-comments .comment-actions > *:not(:first-child) {
+  margin-left: 8px;
+}
 .site-article .article-footer .article-comments .thread-toggle {
   display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
 }
-.site-article .article-footer .article-comments .thread-toggle a:hover {
-  color: #5f9ea0;
+.site-article .article-footer .article-comments .thread-toggle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: url("https://kai-tw.github.io/blog-assets/img/icon/expand-dark.svg") center/contain no-repeat;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+.site-article .article-footer .article-comments .thread-toggle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: url("https://kai-tw.github.io/blog-assets/img/icon/collapse-dark.svg") center/contain no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+.site-article .article-footer .article-comments .thread-toggle.thread-expanded:before {
+  opacity: 0;
+  visibility: hidden;
+}
+.site-article .article-footer .article-comments .thread-toggle.thread-expanded:after {
+  opacity: 1;
+  visibility: visible;
+}
+.site-article .article-footer .article-comments .thread-toggle .thread-arrow,
+.site-article .article-footer .article-comments .thread-toggle .thread-count {
+  display: none;
+}
+.site-article .article-footer .article-comments .continue {
+  margin: 8px 0;
 }
 .site-article .article-footer .article-comments .comment-reply {
-  display: block;
-  padding: 1rem;
-  transition: all 0.2s linear;
-}
-.site-article .article-footer .article-comments .comment-reply:hover {
-  color: #5f9ea0;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 16px;
+  background: #26242b;
+  line-height: 1;
+  transition: all 0.2s ease;
+  display: inline-block;
 }
 .site-article .article-footer .article-comments .comment-reply:before {
-  content: "reply";
-  font-family: "Material Symbols Outlined";
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  vertical-align: bottom;
+  width: 16px;
+  height: 16px;
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  background: url("https://kai-tw.github.io/blog-assets/img/icon/reply-dark.svg") center/contain no-repeat;
 }
-.site-article .article-footer .article-comments .item-control a {
-  display: block;
-  padding: 1rem;
-  transition: all 0.2s linear;
+.site-article .article-footer .article-comments .comment-reply:hover {
+  background: #0070d1;
 }
-.site-article .article-footer .article-comments .item-control a:hover {
-  color: #5f9ea0;
+.site-article .article-footer .article-comments .item-control {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 16px;
+  background: #26242b;
+  line-height: 1;
+  transition: all 0.2s ease;
 }
 .site-article .article-footer .article-comments .item-control a:before {
-  content: "delete_outline";
-  font-family: "Material Symbols Outlined";
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  vertical-align: bottom;
+  width: 16px;
+  height: 16px;
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  background: url("https://kai-tw.github.io/blog-assets/img/icon/delete-dark.svg") center/contain no-repeat;
 }
-.site-article .article-footer .article-comments .thread-count {
-  display: block;
-  width: 2rem;
-  height: 2rem;
-}
-.site-article .article-footer .article-comments .thread-count a {
-  display: block;
-  width: inherit;
-  height: inherit;
-  font-size: 0;
-}
-.site-article .article-footer .article-comments .thread-count a:before {
-  content: "expand_more";
-  display: inherit;
-  width: inherit;
-  height: inherit;
-  text-align: center;
-  font-family: "Material Symbols Outlined";
-  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 48;
-  font-size: 24px;
-  line-height: 2rem;
-}
-.site-article .article-footer .article-comments .thread-expanded .thread-count a {
-  transform: rotateZ(180deg);
+.site-article .article-footer .article-comments .item-control:hover {
+  background: #0070d1;
 }
 .site-article .article-footer .article-comments .thread-chrome {
-  margin: 0;
-  margin-left: 1rem;
-  padding-left: 1rem;
-  border-left: 1px solid #5f9ea0;
+  margin: 16px;
+  padding: 0 0 0 31px;
+  border-left: 2px solid #bc0d0d;
   list-style: none;
   display: block;
 }
@@ -292,136 +320,7 @@
   margin: 0;
   padding: 0;
 }
-.site-article .article-footer .promotion {
-  position: relative;
-  margin: 2rem 0;
-  border-radius: 1rem;
-  height: 14rem;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.site-article .article-footer .promotion:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.7));
-  z-index: 1;
-}
-.site-article .article-footer .promotion a {
-  color: inherit;
-}
-.site-article .article-footer .promotion .panel {
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-  color: #fff;
-  text-align: center;
-  z-index: 2;
-}
-.site-article .article-footer .promotion .panel p {
-  margin: 0;
-}
-.site-article .article-footer .promotion .panel .slogan {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-.site-article .article-footer .promotion .panel .slogan span {
-  margin: 0 0.5rem;
-  vertical-align: text-bottom;
-}
-@media screen and (max-width: 768px) {
-  .site-article .article-footer .promotion:before {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  .site-article .article-footer .promotion .panel {
-    width: 100%;
-  }
-}
 
 .blog-admin {
   display: none;
-}
-
-.article-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  margin: 3rem 0;
-  letter-spacing: 0.1em;
-  z-index: 0;
-}
-.article-list .article-thumbnail {
-  display: block;
-  margin: 0;
-  width: 240px;
-  height: 120px;
-  overflow: hidden;
-}
-.article-list .article-thumbnail img {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all 2s cubic-bezier(0, 0, 0.18, 0.96);
-}
-.article-list:hover .article-thumbnail img {
-  transform: scale(1.1);
-}
-.article-list .article-information {
-  width: calc(100% - 240px);
-  padding-left: 1rem;
-  box-sizing: border-box;
-}
-.article-list .article-information .article-datetime {
-  display: block;
-  color: #555;
-}
-.article-list .article-information .article-title {
-  margin: 0;
-  line-height: 1.2;
-}
-.article-list .article-url {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: none;
-  z-index: 1;
-}
-@media screen and (max-width: 768px) {
-  .article-list {
-    flex-direction: column;
-  }
-  .article-list .article-thumbnail {
-    position: relative;
-    padding-top: 50%;
-    width: 100%;
-    height: 0;
-  }
-  .article-list .article-thumbnail img {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .article-list .article-information {
-    width: 100%;
-    padding-top: 1rem;
-    padding-left: 0;
-  }
 }

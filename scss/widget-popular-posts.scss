@@ -1,0 +1,35 @@
+.widget.PopularPosts {
+    margin: 32px auto;
+    max-width: 680px;
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        margin: 0 0 48px 0;
+
+        .article-thumbnail {
+            margin: 0 48px 0 0;
+            border-radius: 16px;
+            width: 100px;
+            background: #1e1c21;
+            text-align: center;
+            line-height: 3;
+        }
+
+        .article-header {
+            flex: 1;
+        }
+
+        .article-title {
+            margin: 0;
+        }
+
+        .article-snippet {
+            margin: 24px 0;
+        }
+
+        .article-read-more {
+            display: flex;
+        }
+    }
+}

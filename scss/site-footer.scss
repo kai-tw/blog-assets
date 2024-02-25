@@ -1,0 +1,22 @@
+#site-footer {
+    padding: 80px 10%;
+    background: #1b191e;
+}
+
+#footer-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+
+    .widget {
+        .title {
+            text-align: center;
+        }
+    }
+}
+
+#site-copyright {
+    margin-top: 60px;
+}
