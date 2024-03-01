@@ -129,11 +129,12 @@ $articleWidth: 680px;
     }
 
     hr {
-        margin: 4em auto;
+        margin: 60px auto;
         border: none;
         max-width: $articleWidth;
-        height: 8px;
+        height: 36px;
         background: url("https://kai-tw.github.io/blog-assets/img/icon/dot-menu-more-dark.svg") center/contain no-repeat;
+        opacity: 0.7;
     }
 
     mark {

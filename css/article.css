@@ -114,11 +114,12 @@
   word-break: break-all;
 }
 .site-article hr {
-  margin: 4em auto;
+  margin: 60px auto;
   border: none;
   max-width: 680px;
-  height: 8px;
+  height: 36px;
   background: url("https://kai-tw.github.io/blog-assets/img/icon/dot-menu-more-dark.svg") center/contain no-repeat;
+  opacity: 0.7;
 }
 .site-article mark {
   background: linear-gradient(transparent 50%, #710000 0%);
