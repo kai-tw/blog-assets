@@ -43,6 +43,9 @@ a {
 a:hover {
   color: #ffc6f1;
 }
+a:visited {
+  color: #ffffff;
+}
 
 img,
 svg {
