@@ -872,6 +872,7 @@ iframe {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  line-height: 1;
 }
 .widget.Label .label-item {
   margin: 8px;
