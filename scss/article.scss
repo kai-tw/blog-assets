@@ -118,7 +118,14 @@ $articleWidth: 680px;
         padding: 0.3rem 0.5rem;
         border-radius: 0.5rem;
         background: rgba(0, 0, 0, 0.1);
-        font-family: "Courier Prime", monospace;
+    }
+
+    .font-monospace,
+    code {
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 
     blockquote {
