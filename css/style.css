@@ -170,6 +170,7 @@ iframe {
   padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.1);
+  font-family: "Courier Prime", monospace;
 }
 .site-article blockquote {
   margin: 1em auto;
@@ -389,6 +390,12 @@ iframe {
 
 .blog-admin {
   display: none;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .video,
