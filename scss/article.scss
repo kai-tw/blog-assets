@@ -42,12 +42,16 @@ $articleWidth: 680px;
 
         figcaption {
             margin-top: 8px;
-            color: #cfcfcf;
+            color: $bodyFontGreyLight;
             line-height: 2;
             font-size: 0.9em;
 
             a {
                 color: inherit;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                color: $bodyFontGreyDark;
             }
         }
     }

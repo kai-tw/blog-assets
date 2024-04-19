@@ -145,12 +145,17 @@ iframe {
 }
 .site-article figure figcaption {
   margin-top: 8px;
-  color: #cfcfcf;
+  color: #404040;
   line-height: 2;
   font-size: 0.9em;
 }
 .site-article figure figcaption a {
   color: inherit;
+}
+@media (prefers-color-scheme: dark) {
+  .site-article figure figcaption {
+    color: #cfcfcf;
+  }
 }
 .site-article picture {
   display: block;
