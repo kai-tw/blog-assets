@@ -680,7 +680,8 @@ iframe {
   width: 50px;
   height: 50px;
 }
-#site-nav .site-nav-list .social-list .item img {
+#site-nav .site-nav-list .social-list .item img,
+#site-nav .site-nav-list .social-list .item svg {
   padding: 16px;
   fill: currentColor;
 }
