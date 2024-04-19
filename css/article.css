@@ -244,6 +244,8 @@
   position: relative;
   width: 32px;
   height: 32px;
+  border-radius: 16px;
+  background: #26242b;
 }
 .site-article .article-footer .article-comments .thread-toggle:before {
   content: "";
