@@ -82,6 +82,11 @@ svg {
     box-sizing: border-box;
 }
 
+svg {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
 iframe {
     width: 100%;
     border: none;
