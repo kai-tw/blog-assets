@@ -92,22 +92,6 @@ iframe {
     border: none;
 }
 
-.light-theme-icon {
-    display: block;
-
-    @media (prefers-color-scheme: dark) {
-        display: none;
-    }
-}
-
-.dark-theme-icon {
-    display: none;
-
-    @media (prefers-color-scheme: dark) {
-        display: block;
-    }
-}
-
 /**
  *  Import
  */

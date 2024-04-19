@@ -1,3 +1,4 @@
+@import "global.scss";
 /**
  *  Variable declaration.
  */
@@ -51,8 +52,12 @@ $foldWidth: $smallScreenWidth;
                     width: 0;
                     height: 3px;
                     transform: translateX(-50%);
-                    background-color: #fff;
+                    background-color: $bodyFontColorLight;
                     transition: all 0.5s ease-in-out;
+
+                    @media (prefers-color-scheme: dark) {
+                        background: $bodyFontColorDark;
+                    }
 
                     @media screen and (max-width: $foldWidth) {
                         top: 50%;
@@ -99,7 +104,8 @@ $foldWidth: $smallScreenWidth;
                 width: 50px;
                 height: 50px;
 
-                img {
+                img,
+                svg {
                     padding: 16px;
                     fill: currentColor;
                 }
@@ -140,7 +146,7 @@ $foldWidth: $smallScreenWidth;
         padding: 66px;
         border: none;
         height: unset;
-        background: #26202c;
+        background: #f9f8ff;
         font-size: 36px;
         text-align: center;
         transform: translateX(48px);
@@ -160,6 +166,10 @@ $foldWidth: $smallScreenWidth;
                     }
                 }
             }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: #26202c;
         }
     }
 }
