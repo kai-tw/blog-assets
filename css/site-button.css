@@ -1,4 +1,7 @@
 /**
+ * Variable declaration.
+ */
+/**
  *  Style definition
  */
 .site-button {
@@ -6,6 +9,7 @@
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
 }

@@ -108,6 +108,9 @@ iframe {
 /**
  *  Import
  */
+/**
+ * Variable declaration.
+ */
 .site-article {
   letter-spacing: 0.1em;
 }
@@ -398,6 +401,7 @@ iframe {
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
   display: inline-block;
@@ -418,6 +422,7 @@ iframe {
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
 }
@@ -488,6 +493,9 @@ iframe {
 }
 
 /**
+ * Variable declaration.
+ */
+/**
  *  Style definition
  */
 .site-button {
@@ -495,6 +503,7 @@ iframe {
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
 }

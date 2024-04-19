@@ -1,3 +1,6 @@
+/**
+ * Variable declaration.
+ */
 .site-article {
   letter-spacing: 0.1em;
 }
@@ -35,12 +38,17 @@
 }
 .site-article figure figcaption {
   margin-top: 8px;
-  color: #cfcfcf;
+  color: #404040;
   line-height: 2;
   font-size: 0.9em;
 }
 .site-article figure figcaption a {
   color: inherit;
+}
+@media (prefers-color-scheme: dark) {
+  .site-article figure figcaption {
+    color: #cfcfcf;
+  }
 }
 .site-article picture {
   display: block;
@@ -283,6 +291,7 @@
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
   display: inline-block;
@@ -303,6 +312,7 @@
   border: none;
   border-radius: 16px;
   background: #26242b;
+  color: #fff;
   line-height: 1;
   transition: all 0.2s ease;
 }

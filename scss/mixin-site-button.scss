@@ -1,8 +1,11 @@
+@import "global.scss";
+
 @mixin site-button {
     padding: 10px 16px;
     border: none;
     border-radius: 16px;
     background: #26242b;
+    color: #fff;
     line-height: 1;
     transition: all 0.2s ease;
 }
