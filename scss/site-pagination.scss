@@ -1,3 +1,5 @@
+@import "global.scss";
+
 #site-pagination {
     display: flex;
     flex-direction: row;
@@ -6,7 +8,7 @@
     margin: 80px 0;
 
     a {
-        background: transparent;
+        background: $bodyBackgroundDark;
 
         &:hover {
             background: #0070d1;

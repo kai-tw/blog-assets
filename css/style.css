@@ -786,6 +786,9 @@ iframe {
   }
 }
 
+/**
+ * Variable declaration.
+ */
 #site-pagination {
   display: flex;
   flex-direction: row;
@@ -794,7 +797,7 @@ iframe {
   margin: 80px 0;
 }
 #site-pagination a {
-  background: transparent;
+  background: #100f12;
 }
 #site-pagination a:hover {
   background: #0070d1;
