@@ -1,3 +1,5 @@
+@import "global.scss";
+
 .widget.PopularPosts {
     margin: 32px auto;
     max-width: 680px;
@@ -11,7 +13,7 @@
             margin: 0 48px 0 0;
             border-radius: 16px;
             width: 100px;
-            background: #1e1c21;
+            background: $commonGreyColor;
             text-align: center;
             line-height: 3;
             overflow: hidden;
