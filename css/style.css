@@ -6,11 +6,21 @@
  */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #eee;
+  background-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar {
+    background-color: #100f12;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #aaa;
+  background-color: #0a1b1c;
+}
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: #c0c5cb;
+  }
 }
 
 /**
@@ -22,10 +32,16 @@ html {
 }
 
 body {
-  color: #c0c5cb;
-  background: #100f12;
+  color: #0a1b1c;
+  background: #ffffff;
   overflow-x: hidden;
   overflow-y: auto;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #c0c5cb;
+    background: #100f12;
+  }
 }
 @media screen and (max-width: 576px) {
   body.on-site-nav-open {
@@ -35,16 +51,27 @@ body {
 
 a {
   border-bottom: 1px solid;
-  color: #8ab4f8;
+  color: #0a316c;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   word-break: break-all;
 }
 a:hover {
-  color: #ffc6f1;
+  color: #9f087a;
 }
 a:visited {
-  color: #c0c5cb;
+  color: #0a1b1c;
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #8ab4f8;
+  }
+  a:hover {
+    color: #ffc6f1;
+  }
+  a:visited {
+    color: #c0c5cb;
+  }
 }
 
 img,
@@ -58,6 +85,24 @@ svg {
 iframe {
   width: 100%;
   border: none;
+}
+
+.light-theme-icon {
+  display: block;
+}
+@media (prefers-color-scheme: dark) {
+  .light-theme-icon {
+    display: none;
+  }
+}
+
+.dark-theme-icon {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-theme-icon {
+    display: block;
+  }
 }
 
 /**
@@ -473,9 +518,12 @@ iframe {
   background: #0070d1;
 }
 
+/**
+ * Variable declaration.
+ */
 #site-footer {
   padding: 80px 10%;
-  background: #1b191e;
+  background: rgba(122, 122, 122, 0.08);
 }
 
 #footer-columns {
@@ -779,6 +827,9 @@ iframe {
 }
 
 /**
+ * Variable declaration.
+ */
+/**
  *  Variable declaration
  */
 /**
@@ -814,8 +865,13 @@ iframe {
   right: -8px;
   bottom: -8px;
   border-radius: 24px;
-  background: #100f12;
+  background: #ffffff;
   z-index: -1;
+}
+@media (prefers-color-scheme: dark) {
+  .widget.Blog .site-article-list-item:after {
+    background-color: #100f12;
+  }
 }
 .widget.Blog .site-article-list-item:hover:before {
   opacity: 1;
@@ -834,7 +890,7 @@ iframe {
   align-items: center;
   margin: 0;
   border-radius: 16px;
-  background: #1e1d21;
+  background: rgba(122, 122, 122, 0.08);
   line-height: 6;
   text-align: center;
   overflow: hidden;

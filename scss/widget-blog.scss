@@ -1,3 +1,5 @@
+@import "global.scss";
+
 /**
  *  Variable declaration
  */
@@ -41,8 +43,12 @@ $gradienBorderPadding: 8px;
             right: calc(0px - $gradienBorderPadding);
             bottom: calc(0px - $gradienBorderPadding);
             border-radius: calc($thumbnailRadius + $gradienBorderPadding);
-            background: #100f12;
+            background: $bodyBackgroundLight;
             z-index: -1;
+
+            @media (prefers-color-scheme: dark) {
+                background-color: $bodyBackgroundDark;
+            }
         }
 
         &:hover:before {
@@ -62,7 +68,7 @@ $gradienBorderPadding: 8px;
             align-items: center;
             margin: 0;
             border-radius: $thumbnailRadius;
-            background: #1e1d21;
+            background: $commonGreyColor;
             line-height: 6;
             text-align: center;
             overflow: hidden;

@@ -1,6 +1,8 @@
+@import "global.scss";
+
 #site-footer {
     padding: 80px 10%;
-    background: #1b191e;
+    background: $commonGreyColor;
 }
 
 #footer-columns {

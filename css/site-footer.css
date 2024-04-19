@@ -1,6 +1,9 @@
+/**
+ * Variable declaration.
+ */
 #site-footer {
   padding: 80px 10%;
-  background: #1b191e;
+  background: rgba(122, 122, 122, 0.08);
 }
 
 #footer-columns {
