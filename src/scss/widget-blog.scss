@@ -12,6 +12,9 @@ $gradienBorderPadding: 8px;
  *  Style definition
  */
 .widget.Blog {
+    margin: 0 auto;
+    max-width: 1000px;
+
     .site-article-list-item {
         display: flex;
         flex-direction: row;
