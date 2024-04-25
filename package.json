@@ -17,6 +17,7 @@
   "dependencies": {
     "css-loader": "^7.1.1",
     "mini-css-extract-plugin": "^2.9.0",
+    "normalize.css": "^8.0.1",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.1"
   }

@@ -10,6 +10,7 @@ module.exports = {
     },
     resolve: {
         alias: {
+            "@node_modules": path.resolve(__dirname, "node_modules"),
             "@src": path.resolve(__dirname, "src"),
             "@img": path.resolve(__dirname, "src/img"),
         },
@@ -17,9 +18,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-            },
+                test: /\.(s[ac])|(c)ss$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+            }
         ],
     },
     plugins: [new MiniCssExtractPlugin()],
