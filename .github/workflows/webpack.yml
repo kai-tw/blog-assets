@@ -8,6 +8,11 @@ on:
 
 jobs:
   build:
+    env:
+      MY_SECRET   : ${{secrets.commit_secret}}
+      USER_NAME   : githubaction
+      USER_EMAIL  : githubaction@fake.com
+      PUBLISH_DIR : ./dist
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,6 +31,10 @@ jobs:
       run: |
         npm install
         npm run start
+        cd $PUBLISH_DIR
+        git init
+        git config --local user.name $USER_NAME
+        git config --local user.email $USER_EMAIL
         git checkout -b gh-pages
         git add -f dist
         git commit -m 'Auto created by workflow.'
