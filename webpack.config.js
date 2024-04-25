@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "production",
@@ -23,5 +24,13 @@ module.exports = {
             }
         ],
     },
-    plugins: [new MiniCssExtractPlugin()],
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/img/favicon_io', to: './favicon_io' },
+                { from: './src/img/icon', to: './img/icon' }
+            ]
+        })
+    ],
 };
