@@ -1,0 +1,39 @@
+@import "global.scss";
+
+.ellipsis-separator {
+    display: block;
+    position: relative;
+    margin: 32px auto;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background: $bodyFontColorLight;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $bodyFontColorDark;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        border-radius: inherit;
+        width: 3px;
+        height: 3px;
+        background: inherit;
+        transform: translateX(50%);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        border-radius: inherit;
+        width: 3px;
+        height: 3px;
+        background: inherit;
+        transform: translateX(50%);
+    }
+}
