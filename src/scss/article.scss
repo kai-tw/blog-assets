@@ -150,8 +150,12 @@ $articleWidth: 680px;
     }
 
     mark {
-        background: linear-gradient(transparent 50%, #710000 0%);
+        background: linear-gradient(transparent 50%, #ffff91 0%);
         color: inherit;
+
+        @media (prefers-color-scheme: dark) {
+            background: linear-gradient(transparent 50%, #710000 0%);
+        }
     }
 
     video,
