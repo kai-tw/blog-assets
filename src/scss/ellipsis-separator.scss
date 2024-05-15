@@ -5,8 +5,8 @@
     position: relative;
     margin: 32px auto;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     background: $bodyFontColorLight;
 
     @media (prefers-color-scheme: dark) {
@@ -17,23 +17,23 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: -10px;
+        left: -24px;
         border-radius: inherit;
-        width: 3px;
-        height: 3px;
+        width: 8px;
+        height: 8px;
         background: inherit;
-        transform: translateX(50%);
+        transform: translate(50%, 50%);
     }
 
     &:after {
         content: "";
         position: absolute;
         top: 50%;
-        left: 10px;
+        right: 24px;
         border-radius: inherit;
-        width: 3px;
-        height: 3px;
+        width: 8px;
+        height: 8px;
         background: inherit;
-        transform: translateX(50%);
+        transform: translate(-50%, 50%);
     }
 }
