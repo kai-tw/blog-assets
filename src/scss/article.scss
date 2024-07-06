@@ -93,6 +93,7 @@ $articleWidth: 680px;
         width: 100%;
         border-collapse: collapse;
         overflow: auto;
+
         thead {
             text-align: center;
         }
@@ -100,7 +101,11 @@ $articleWidth: 680px;
         th {
             padding: 0.5rem 1rem;
             border: 1px solid #ccc;
-            word-break: keep-all;
+
+            &.non-word-wrap {
+                word-break: keep-all;
+                white-space: pre;
+            }
         }
         ul {
             margin: 0;
