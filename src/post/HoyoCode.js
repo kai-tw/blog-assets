@@ -46,7 +46,7 @@ export const HoyoCode = {
             /* Expire time */
             if (e["expireTime"]) {
                 expireTimeTd.expireTime = e["expireTime"];
-                expireTimeNodeList.push(expireTimeTd);
+                this.expireTimeNodeList.push(expireTimeTd);
             } else {
                 expireTimeTd.innerText = "未知";
             }
