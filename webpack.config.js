@@ -1,12 +1,12 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "production",
-    entry: {
-        "main": path.resolve(__dirname, "./src/index.js"),
-    },
+    context: path.resolve(__dirname, 'src'),
+    entry: './index.js',
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "dist")
@@ -27,11 +27,17 @@ module.exports = {
         ],
     },
     plugins: [
+        // new HtmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     template: 'index.html',
+        //     viewport: 'width=device-width, initial-scale=1.0',
+        //     minify: true,
+        // }),
         new MiniCssExtractPlugin(),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './src/img/favicon_io', to: './favicon_io' },
-                { from: './src/img/icon', to: './img/icon' }
+                { from: 'img/favicon_io', to: './favicon_io' },
+                { from: 'img/icon', to: './img/icon' }
             ]
         })
     ],
