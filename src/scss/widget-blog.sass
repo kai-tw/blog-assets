@@ -31,6 +31,9 @@ $verticalAlignWidth: 768px
             max-width: 330px
             width: 100%
 
+        &:hover .article-thumbnail .media
+            scale: 1.1
+
     .article-thumbnail
         display: flex
         flex-direction: row
@@ -43,6 +46,7 @@ $verticalAlignWidth: 768px
 
         .media
             margin: 0
+            transition: all 0.5s ease-in-out
 
     .article-header
         flex: 1
