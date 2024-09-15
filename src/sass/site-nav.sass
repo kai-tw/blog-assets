@@ -39,9 +39,6 @@ $foldWidth: $smallScreenWidth
         line-height: 1
         box-sizing: border-box
 
-        @media screen and (max-width: $foldWidth)
-          padding: 24px
-
         &:before
           content: ""
           position: absolute
@@ -50,7 +47,7 @@ $foldWidth: $smallScreenWidth
           border-radius: 1.5px
           width: 0
           height: 3px
-          transform: translateX(-50%)
+          translate: -50% 0
           background-color: $bodyFontColorLight
           transition: all 0.5s ease-in-out
 
@@ -63,7 +60,7 @@ $foldWidth: $smallScreenWidth
             right: 0
             width: 3px
             height: 0
-            transform: translateY(-50%)
+            translate: 0 -50%
 
         &:hover:before,
         &.active:before
@@ -88,7 +85,7 @@ $foldWidth: $smallScreenWidth
         bottom: 0
         padding: 0
         justify-content: center
-        transform: translateX(-50%)
+        translate: -50% 0
 
       .item
         width: 50px
@@ -115,7 +112,7 @@ $foldWidth: $smallScreenWidth
 
       @for $i from 1 through 3
         & > .item:nth-child(#{$i})
-          transform: translateX(#{$i * 24}px)
+          translate: #{$i * 24}px 0
 
   @media screen and (max-width: $foldWidth)
     flex-direction: column
@@ -124,26 +121,26 @@ $foldWidth: $smallScreenWidth
     left: 0
     right: 0
     bottom: 0
-    padding: 66px
+    padding: 24px
     border: none
     height: unset
     background: #f9f8ff
-    font-size: 36px
+    font-size: 24px
     text-align: center
-    transform: translateX(48px)
+    translate: 48px 0
     opacity: 0
     visibility: hidden
     z-index: 1
 
     &.show
-      transform: translateX(0)
+      translate: 0
       opacity: 1
       visibility: visible
 
       .site-nav-list
         @media screen and (max-width: $foldWidth)
           & > .item
-            transform: translateX(0)
+            translate: 0
 
     @media (prefers-color-scheme: dark)
       background: #26202c
