@@ -150,9 +150,7 @@ $foldWidth: $smallScreenWidth
 
 #site-nav-toggle-button
   display: none
-  position: fixed
-  top: 16px
-  right: 16px
+  position: relative
   border: none
   width: 50px
   height: 50px
@@ -162,41 +160,50 @@ $foldWidth: $smallScreenWidth
   z-index: 2
   overflow: hidden
 
+  @media screen and (max-width: $foldWidth)
+    display: block
+
   &:before
     content: ""
     position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
+    top: 22px
+    right: 16px
+    width: 18px
+    height: 2px
+    background: $bodyFontColorLight
+    translate: 0 -50%
+    transition: all 500ms ease-in-out
     z-index: 1
 
-  svg
+    @media (prefers-color-scheme: dark)
+      background: $bodyFontColorDark
+
+  &:after
+    content: ""
     position: absolute
-    top: 50%
-    left: 50%
-    width: 32px
-    height: 32px
-    object-fit: contain
-    transition: all 0.2s ease
+    right: 16px
+    bottom: 22px
+    width: 10px
+    height: 2px
+    background: $bodyFontColorLight
+    translate: 0 50%
+    transition: all 500ms ease-in-out
+    z-index: 1
 
-    &.normal-icon
-      transform: translate(-50%, -50%)
-      opacity: 1
-
-    &.close-icon
-      transform: translate(50%, -50%)
-      opacity: 0
+    @media (prefers-color-scheme: dark)
+      background: $bodyFontColorDark
 
   &.close
-    svg
-      &.normal-icon
-        transform: translate(50%, -50%)
-        opacity: 0
+    &:before
+      top: 50%
+      right: 50%
+      width: 18px
+      translate: 50% -50%
+      rotate: 45deg
 
-      &.close-icon
-        transform: translate(-50%, -50%)
-        opacity: 1
-
-  @media screen and (max-width: $foldWidth)
-    display: block
+    &:after
+      right: 50%
+      bottom: 50%
+      width: 18px
+      translate: 50% 50%
+      rotate: -45deg
