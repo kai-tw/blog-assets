@@ -15,17 +15,21 @@ $foldWidth: $smallScreenWidth
   * Style definitions.
   */
 #site-nav
+  display: flex
   transition: all 0.2s ease
 
   .site-nav-button-list
     display: flex
-    position: fixed
-    top: 16px
-    right: 16px
+    position: static
     z-index: 2
 
     button
       cursor: pointer
+
+  @media screen and (max-width: $foldWidth)
+    position: fixed
+    top: 16px
+    right: 16px
 
 #site-nav-list
   display: flex
@@ -120,7 +124,7 @@ $foldWidth: $smallScreenWidth
   .social-list
     display: flex
     flex-direction: row
-    padding: 0 1rem
+    padding: 0 0 0 16px
     list-style: none
 
     @media screen and (max-width: $foldWidth)
