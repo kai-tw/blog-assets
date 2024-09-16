@@ -1,37 +1,40 @@
 export const SiteNav = {
     init: function () {
         let buttonMap = this._buttonMap = {
-            "site-nav-toggle-button": "site-nav-list",
-            "site-search-toggle-button": "site-search"
+            "site-nav-toggle-button": {
+                target: "site-nav-list",
+                lockScroll: LockScrollType.smallScreen
+            },
+            "site-search-toggle-button": {
+                target: "site-search",
+                lockScroll: LockScrollType.all
+            },
         };
 
         Object.keys(buttonMap).forEach((key) => {
             document.getElementById(key).addEventListener("click", (event) => {
-                let button = event.target;
-                let body = document.body;
-                let targetNode = document.getElementById(buttonMap[key]);
+                const isOpen = event.target.classList.contains("close");
+                this._closeAll();
 
-                if (button.classList.contains("close")) {
-                    button.classList.remove("close");
-                    body.classList.remove("lock-scroll");
-                    targetNode.classList.remove("show");
-                } else {
-                    if (body.classList.contains("lock-scroll")) {
-                        this._closeAll();
-                    } else {
-                        body.classList.add("lock-scroll");
-                    }
-                    button.classList.add("close");
-                    targetNode.classList.add("show");
+                if (!isOpen) {
+                    event.target.classList.add("close");
+                    document.body.classList.add(buttonMap[key].lockScroll);
+                    document.getElementById(buttonMap[key].target).classList.add("show");
                 }
             });
         });
     },
 
     _closeAll: function () {
+        document.body.classList.remove(...Object.values(LockScrollType));
         Object.keys(this._buttonMap).forEach((key) => {
             document.getElementById(key).classList.remove("close");
-            document.getElementById(this._buttonMap[key]).classList.remove("show");
+            document.getElementById(this._buttonMap[key].target).classList.remove("show");
         });
     },
 }
+
+const LockScrollType = {
+    all: "lock-scroll",
+    smallScreen: "lock-small-screen-scroll",
+};

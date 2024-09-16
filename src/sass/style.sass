@@ -1,22 +1,6 @@
 @import "global"
 
 /**
- *  Scrollbar settings.
- */
-::-webkit-scrollbar
-  width: 10px
-  background-color: $bodyBackgroundLight
-
-  @media (prefers-color-scheme: dark)
-    background-color: $bodyBackgroundDark
-
-::-webkit-scrollbar-thumb
-  background-color: $bodyFontColorLight
-
-  @media (prefers-color-scheme: dark)
-    background-color: $bodyFontColorDark
-
-/**
  *  General settings.
  */
 html
@@ -35,6 +19,9 @@ body
     background: $bodyBackgroundDark
 
   &.lock-scroll
+    overflow-y: hidden
+
+  &.lock-small-screen-scroll
     @media screen and (max-width: $smallScreenWidth)
       overflow-y: hidden
 
@@ -91,5 +78,4 @@ iframe
 @import "site-search"
 @import "site-main"
 @import "widget-blog"
-@import "widget-label"
 @import "widget-popular-posts"

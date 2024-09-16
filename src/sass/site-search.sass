@@ -1,6 +1,8 @@
 @import "global"
 
 #site-search
+  display: flex
+  flex-direction: column
   position: fixed
   top: 0
   left: 0
@@ -61,6 +63,23 @@
       bottom: 50%
       width: 10px
       rotate: 0deg
+
+#site-search-section
+  flex: 1
+  margin: 16px 8px 0
+  overflow: hidden auto
+
+  .category-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .category-list-item
+      display: block
+      margin: 0 16px 16px 0
+      border: none
+      width: 200px
+      color: inherit
 
 .search-keyword
   position: relative
