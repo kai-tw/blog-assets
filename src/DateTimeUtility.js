@@ -15,15 +15,14 @@ export const DateTimeUtility = {
         }
 
         timeElapsed /= 1000;
-        const sec = Math.floor(timeElapsed % 60);
         timeElapsed /= 60;
         const min = Math.floor(timeElapsed % 60);
         timeElapsed /= 60;
         const hour = Math.floor(timeElapsed % 24);
         timeElapsed /= 24;
         const day = Math.floor(timeElapsed);
-        const d = [day, hour, min, sec];
-        const unit = ["天", "小時", "分", "秒"];
+        const d = [day, hour, min];
+        const unit = ["天", "小時", "分"];
         let timeLeftString = [];
         for (let i = 0, j = 0; j < 2 && i < d.length; i++) {
             if (d[i] === 0) {

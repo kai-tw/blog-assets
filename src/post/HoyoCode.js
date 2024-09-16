@@ -25,9 +25,6 @@ export const HoyoCode = {
             const expireTimeTd = document.createElement("td");
             const addTimeTd = document.createElement("td");
             const noteTd = document.createElement("td");
-            codeTd.classList.add("non-word-wrap");
-            expireTimeTd.classList.add("non-word-wrap");
-            noteTd.classList.add("non-word-wrap");
             tableRow.appendChild(codeTd);
             tableRow.appendChild(expireTimeTd);
             tableRow.appendChild(addTimeTd);
