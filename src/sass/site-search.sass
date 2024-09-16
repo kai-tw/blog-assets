@@ -6,7 +6,7 @@
   left: 0
   right: 0
   bottom: 0
-  padding: 82px 24px 24px
+  padding: 82px 16px 16px
   translate: 0 -48px
   opacity: 0
   visibility: hidden
@@ -29,13 +29,38 @@
 #site-search-input
   flex: 1
   display: block
+  padding: 0 0 0 8px
   border: none
   height: 50px
+  min-width: 0
   font: inherit
   color: inherit
   background: transparent
   line-height: 50px
   box-sizing: border-box
+
+#site-search-submit
+  margin: 0
+  padding: 0
+  border: none
+  background: transparent
+  box-sizing: border-box
+  cursor: pointer
+
+  &:hover
+    &:before
+      border-left-color: transparent
+      border-bottom-color: transparent
+      border-radius: 0
+      top: 50%
+      left: 27px
+      rotate: 45deg
+
+    &:after
+      right: 27px
+      bottom: 50%
+      width: 10px
+      rotate: 0deg
 
 .search-keyword
   position: relative
