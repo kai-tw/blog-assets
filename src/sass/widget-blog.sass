@@ -9,10 +9,12 @@ $verticalAlignWidth: 768px
  *  Style definition
  */
 .widget.Blog
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
   margin: 0
+
+  .site-article-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
 
   .site-article-list-item
     display: flex
@@ -34,57 +36,57 @@ $verticalAlignWidth: 768px
     &:hover .article-thumbnail .media
       scale: 1.1
 
-  .article-thumbnail
-    display: flex
-    flex-direction: row
-    align-items: center
-    margin: 0
-    background: $commonGreyColor
-    line-height: 6
-    text-align: center
-    overflow: hidden
-
-    .media
+    .article-thumbnail
+      display: flex
+      flex-direction: row
+      align-items: center
       margin: 0
-      transition: all 0.5s ease-in-out
+      background: $commonGreyColor
+      line-height: 6
+      text-align: center
+      overflow: hidden
 
-  .article-header
-    flex: 1
-    display: flex
-    flex-direction: column
-    margin: 24px
+      .media
+        margin: 0
+        transition: all 0.5s ease-in-out
 
-  .article-title
-    flex: 1
-    margin: 8px 0
-    font-size: 20px
-    line-height: 1.7
-    word-break: break-word
+    .article-header
+      flex: 1
+      display: flex
+      flex-direction: column
+      margin: 24px
 
-  .article-label-list
-    display: flex
-    flex-wrap: wrap
-    opacity: 0.7
+    .article-title
+      flex: 1
+      margin: 8px 0
+      font-size: 20px
+      line-height: 1.7
+      word-break: break-word
 
-    .label:not(:first-child)
-      margin-left: 16px
+    .article-label-list
+      display: flex
+      flex-wrap: wrap
+      opacity: 0.7
 
-  .article-updated-time
-    opacity: 0.7
+      .label:not(:first-child)
+        margin-left: 16px
 
-  .article-read-more
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    border: 4px solid transparent
-    border-radius: 24px
-    text-decoration: none
-    transition: all 0.2s ease-in-out
+    .article-updated-time
+      opacity: 0.7
 
-    &:focus
-      border-color: $linkColorLight
+    .article-read-more
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border: 4px solid transparent
+      border-radius: 24px
+      text-decoration: none
+      transition: all 0.2s ease-in-out
 
-      @media (prefers-color-scheme: dark)
-        border-color: $linkColorDark
+      &:focus
+        border-color: $linkColorLight
+
+        @media (prefers-color-scheme: dark)
+          border-color: $linkColorDark

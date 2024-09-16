@@ -78,11 +78,7 @@ $articleWidth: 680px
 
   table
     margin: 1em auto
-    display: block
-    max-width: $articleWidth
-    width: 100%
     border-collapse: collapse
-    overflow: auto
 
     thead
       text-align: center
@@ -92,23 +88,18 @@ $articleWidth: 680px
       padding: 0.5rem 1rem
       border: 1px solid #ccc
 
-      &.non-word-wrap
-        word-break: keep-all
-        white-space: pre
-
     ul
       margin: 0
       padding: 0 0 0 1em
       white-space: normal
 
-    .alert
-      background: #ffd9d9
+  .overflow-table
+    display: block
+    width: 100%
+    overflow: auto
 
-    .warning
-      background: #fff7d9
-
-    .recommend
-      background: #d9ffdf
+    table
+      white-space: nowrap
 
   code
     padding: 0.1rem 0.5rem
