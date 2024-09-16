@@ -17,114 +17,37 @@ $foldWidth: $smallScreenWidth
 #site-nav
   transition: all 0.2s ease
 
-  .site-nav-list
+  .site-nav-button-list
     display: flex
-    margin: 0
-    padding: 0
-    list-style: none
-    line-height: inherit
-    box-sizing: border-box
-    transition: all 0.4s ease-in-out
+    position: fixed
+    top: 16px
+    right: 16px
+    z-index: 2
 
-    .item
-      transition: all 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+    button
+      cursor: pointer
 
-      a
-        position: relative
-        display: block
-        margin: 0
-        padding: 17px
-        border: none
-        color: inherit
-        line-height: 1
-        box-sizing: border-box
-
-        &:before
-          content: ""
-          position: absolute
-          left: 50%
-          bottom: 3px
-          border-radius: 1.5px
-          width: 0
-          height: 3px
-          translate: -50% 0
-          background-color: $bodyFontColorLight
-          transition: all 0.5s ease-in-out
-
-          @media (prefers-color-scheme: dark)
-            background: $bodyFontColorDark
-
-          @media screen and (max-width: $foldWidth)
-            top: 50%
-            left: unset
-            right: 0
-            width: 3px
-            height: 0
-            translate: 0 -50%
-
-        &:hover:before,
-        &.active:before
-          width: 38.2%
-
-          @media screen and (max-width: $foldWidth)
-            width: 3px
-            height: 61.8%
-
-        &.active
-          cursor: default
-
-    .social-list
-      display: flex
-      flex-direction: row
-      padding: 0 1rem
-      list-style: none
-
-      @media screen and (max-width: $foldWidth)
-        position: absolute
-        left: 50%
-        bottom: 0
-        padding: 0
-        justify-content: center
-        translate: -50% 0
-
-      .item
-        width: 50px
-        height: 50px
-
-        img,
-        svg
-          padding: 16px
-          fill: currentColor
-
-        a
-          padding: 0
-
-          &:before
-            @media screen and (max-width: $foldWidth)
-              display: none
-
-    @media screen and (max-width: $foldWidth)
-      flex-direction: column
-      justify-content: center
-      position: relative
-      border: none
-      height: 100%
-
-      @for $i from 1 through 3
-        & > .item:nth-child(#{$i})
-          translate: #{$i * 24}px 0
+#site-nav-list
+  display: flex
+  margin: 0
+  padding: 0
+  list-style: none
+  line-height: inherit
+  box-sizing: border-box
+  transition: all 0.4s ease-in-out
 
   @media screen and (max-width: $foldWidth)
     flex-direction: column
+    justify-content: center
     position: fixed
     top: 0
     left: 0
     right: 0
     bottom: 0
-    padding: 24px
+    padding: 82px 24px 24px
     border: none
-    height: unset
-    background: #f9f8ff
+    height: 100%
+    background: $siteNavBackgroundLight
     font-size: 24px
     text-align: center
     translate: 48px 0
@@ -132,75 +55,100 @@ $foldWidth: $smallScreenWidth
     visibility: hidden
     z-index: 1
 
+    @media (prefers-color-scheme: dark)
+      background: $siteNavBackgroundDark
+
+    @for $i from 1 through 3
+      & > .item:nth-child(#{$i})
+        translate: #{$i * 24}px 0
+
     &.show
       translate: 0
       opacity: 1
       visibility: visible
 
-      .site-nav-list
-        @media screen and (max-width: $foldWidth)
-          & > .item
-            translate: 0
+      & > .item
+        translate: 0
 
-    @media (prefers-color-scheme: dark)
-      background: #26202c
+  .item
+    transition: all 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+
+    a
+      position: relative
+      display: block
+      margin: 0
+      padding: 17px
+      border: none
+      color: inherit
+      line-height: 1
+      box-sizing: border-box
+
+      &:before
+        content: ""
+        position: absolute
+        left: 50%
+        bottom: 3px
+        border-radius: 1.5px
+        width: 0
+        height: 3px
+        translate: -50% 0
+        background-color: $bodyFontColorLight
+        transition: all 0.5s ease-in-out
+
+        @media (prefers-color-scheme: dark)
+          background: $bodyFontColorDark
+
+        @media screen and (max-width: $foldWidth)
+          top: 50%
+          left: unset
+          right: 0
+          width: 3px
+          height: 0
+          translate: 0 -50%
+
+      &:hover:before,
+      &.active:before
+        width: 38.2%
+
+        @media screen and (max-width: $foldWidth)
+          width: 3px
+          height: 61.8%
+
+      &.active
+        cursor: default
+
+  .social-list
+    display: flex
+    flex-direction: row
+    padding: 0 1rem
+    list-style: none
+
+    @media screen and (max-width: $foldWidth)
+      position: absolute
+      left: 50%
+      bottom: 0
+      padding: 0
+      justify-content: center
+      translate: -50% 0
+
+    .item
+      width: 50px
+      height: 50px
+
+      img,
+      svg
+        padding: 16px
+        fill: currentColor
+
+      a
+        padding: 0
+
+        &:before
+          @media screen and (max-width: $foldWidth)
+            display: none
 
 #site-nav-toggle-button
   display: none
-  position: relative
-  border: none
-  width: 50px
-  height: 50px
-  box-sizing: border-box
-  background: transparent
-  cursor: pointer
-  z-index: 2
-  overflow: hidden
 
   @media screen and (max-width: $foldWidth)
     display: block
-
-  &:before
-    content: ""
-    position: absolute
-    top: 22px
-    right: 16px
-    width: 18px
-    height: 2px
-    background: $bodyFontColorLight
-    translate: 0 -50%
-    transition: all 500ms ease-in-out
-    z-index: 1
-
-    @media (prefers-color-scheme: dark)
-      background: $bodyFontColorDark
-
-  &:after
-    content: ""
-    position: absolute
-    right: 16px
-    bottom: 22px
-    width: 10px
-    height: 2px
-    background: $bodyFontColorLight
-    translate: 0 50%
-    transition: all 500ms ease-in-out
-    z-index: 1
-
-    @media (prefers-color-scheme: dark)
-      background: $bodyFontColorDark
-
-  &.close
-    &:before
-      top: 50%
-      right: 50%
-      width: 18px
-      translate: 50% -50%
-      rotate: 45deg
-
-    &:after
-      right: 50%
-      bottom: 50%
-      width: 18px
-      translate: 50% 50%
-      rotate: -45deg

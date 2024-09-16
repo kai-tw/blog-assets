@@ -1,11 +1,9 @@
 import "normalize.css";
 import "@src/sass/style.sass";
 import { AceEditor } from "@src/AceEditor.js";
-import { siteNavFunction } from "@src/siteNavFunction.js";
+import { SiteNav } from "@src/SiteNav.js";
 import { HoyoCode } from "@src/post/HoyoCode.js";
 import { MathJax } from "@src/MathJax.js";
-
-siteNavFunction();
 
 window.Post = {
     HoyoCode: HoyoCode,
@@ -13,3 +11,4 @@ window.Post = {
 
 AceEditor.init();
 MathJax.init();
+SiteNav.init();

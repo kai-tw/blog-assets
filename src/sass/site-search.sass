@@ -1,16 +1,55 @@
-.search-keyword
-    position: relative
-    margin: 0 0 60px 20px
-    width: 100%
-    font-size: 24px
+@import "global"
 
-    &:before
-        content: attr(data-label)
-        position: absolute
-        top: 50%
-        right: 0
-        max-width: 100%
-        font-size: 90px
-        opacity: 0.1
-        transform: translateY(-50%)
-        overflow: hidden
+#site-search
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  padding: 82px 24px 24px
+  translate: 0 -48px
+  opacity: 0
+  visibility: hidden
+  background: $bodyBackgroundLight
+  transition: all 400ms ease-in-out
+  z-index: 1
+
+  @media (prefers-color-scheme: dark)
+    background: $bodyBackgroundDark
+
+  &.show
+    translate: 0
+    opacity: 1
+    visibility: visible
+
+#site-search-form
+  display: flex
+  height: 50px
+
+#site-search-input
+  flex: 1
+  display: block
+  border: none
+  height: 50px
+  font: inherit
+  color: inherit
+  background: transparent
+  line-height: 50px
+  box-sizing: border-box
+
+.search-keyword
+  position: relative
+  margin: 0 0 60px 20px
+  width: 100%
+  font-size: 24px
+
+  &:before
+    content: attr(data-label)
+    position: absolute
+    top: 50%
+    right: 0
+    max-width: 100%
+    font-size: 90px
+    opacity: 0.1
+    transform: translateY(-50%)
+    overflow: hidden
