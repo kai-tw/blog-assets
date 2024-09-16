@@ -13,23 +13,25 @@ export const SiteNav = {
 
         Object.keys(buttonMap).forEach((key) => {
             document.getElementById(key).addEventListener("click", (event) => {
-                const isOpen = event.target.classList.contains("close");
-                this._closeAll();
+                if (this._activeButton && this._activeButton !== key) {
+                    document.getElementById(this._activeButton).classList.remove("active");
+                    document.getElementById(buttonMap[this._activeButton].target).classList.remove("show");
+                    document.body.classList.remove(buttonMap[this._activeButton].lockScroll);
+                }
 
-                if (!isOpen) {
-                    event.target.classList.add("close");
+                event.target.classList.toggle("active");
+                const isOpen = event.target.classList.contains("active");
+
+                if (isOpen) {
+                    this._activeButton = key;
                     document.body.classList.add(buttonMap[key].lockScroll);
                     document.getElementById(buttonMap[key].target).classList.add("show");
+                } else {
+                    this._activeButton = null;
+                    document.body.classList.remove(buttonMap[key].lockScroll);
+                    document.getElementById(buttonMap[key].target).classList.remove("show");
                 }
             });
-        });
-    },
-
-    _closeAll: function () {
-        document.body.classList.remove(...Object.values(LockScrollType));
-        Object.keys(this._buttonMap).forEach((key) => {
-            document.getElementById(key).classList.remove("close");
-            document.getElementById(this._buttonMap[key].target).classList.remove("show");
         });
     },
 }

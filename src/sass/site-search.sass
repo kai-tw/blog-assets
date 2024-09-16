@@ -45,24 +45,13 @@
   margin: 0
   padding: 0
   border: none
+  color: $bodyFontColorLight
   background: transparent
   box-sizing: border-box
   cursor: pointer
 
-  &:hover
-    &:before
-      border-left-color: transparent
-      border-bottom-color: transparent
-      border-radius: 0
-      top: 50%
-      left: 27px
-      rotate: 45deg
-
-    &:after
-      right: 27px
-      bottom: 50%
-      width: 10px
-      rotate: 0deg
+  @media (prefers-color-scheme: dark)
+    color: $bodyFontColorDark
 
 #site-search-section
   flex: 1
