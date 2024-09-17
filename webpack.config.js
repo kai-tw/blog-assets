@@ -27,12 +27,12 @@ module.exports = {
         ],
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: 'index.html',
-        //     viewport: 'width=device-width, initial-scale=1.0',
-        //     minify: true,
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'index.html',
+            viewport: 'width=device-width, initial-scale=1.0',
+            minify: true,
+        }),
         new MiniCssExtractPlugin(),
         new CopyWebpackPlugin({
             patterns: [

@@ -73,7 +73,7 @@ export const HoyoCode = {
             if (string === false) {
                 e.parentElement.parentElement.removeChild(e.parentElement);
                 this.expireTimeNodeList.splice(i, 1);
-            } else {
+            } else if (e.innerText !== string) {
                 e.innerText = string;
             }
         });
