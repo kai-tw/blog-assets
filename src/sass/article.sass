@@ -11,11 +11,27 @@ $articleWidth: 680px
 
     a
       color: inherit
-      font-weight: bolder
 
-    h1
-      margin: 1rem 0
-      font-size: 2rem
+    .article-info
+      .category-list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+
+        .item
+          display: flex
+          flex-direction: row
+          flex-wrap: nowrap
+          margin: 0 8px 8px 0
+          font-size: 14px
+          opacity: 0.8
+
+      .article-date
+        display: block
+        opacity: 0.8
+
+    .article-title
+      margin: 32px 0 24px 0
 
   h1,
   h2
@@ -69,6 +85,7 @@ $articleWidth: 680px
     margin: 1em auto
     padding: 0 2rem
     max-width: $articleWidth
+    box-sizing: border-box
 
     ul,
     ol
@@ -142,34 +159,6 @@ $articleWidth: 680px
   video,
   .media
     margin: 2rem 0
-
-  .article-info
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-
-    a
-      color: inherit
-      font-weight: bolder
-
-    .item
-      display: flex
-      flex-direction: row
-      flex-wrap: nowrap
-      margin: 0.5em
-      height: 2em
-      line-height: 2em
-
-      .icon
-        display: block
-        margin-right: 0.5em
-        height: inherit
-        line-height: inherit
-
-      .content
-        display: block
-        height: inherit
-        line-height: inherit
 
   .article-footer
     margin: 4rem auto
