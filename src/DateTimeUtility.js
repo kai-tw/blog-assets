@@ -22,7 +22,7 @@ export const DateTimeUtility = {
         timeElapsed /= 24;
         const day = Math.floor(timeElapsed);
         const d = [day, hour, min];
-        const unit = ["天", "小時", "分"];
+        const unit = ["天", "小時", "分鐘"];
         let timeLeftString = [];
         for (let i = 0, j = 0; j < 2 && i < d.length; i++) {
             if (d[i] === 0) {
@@ -32,7 +32,7 @@ export const DateTimeUtility = {
             timeLeftString.push(unit[i]);
             j++;
         }
-        return timeLeftString.join(" ");
+        return timeLeftString.length > 0 ? timeLeftString.join(" ") : "< 1 分鐘";
     },
 
     getTimeLeftString: function (expireTime) {
